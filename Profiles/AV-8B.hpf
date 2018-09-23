@@ -510,7 +510,7 @@
                   </ClickType>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.AV8B.SlipBall" Name="SlipBall" SnapTarget="True" Locked="False">
+                <Control TypeIdentifier="Helios.AV8B.SlipTurn" Name="SlipBall" SnapTarget="True" Locked="False">
                   <Location>25,20</Location>
                   <Size>112,57</Size>
                   <Hidden>False</Hidden>
@@ -4547,7 +4547,7 @@
     </Binding>
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="Flight Instruments.Slip Ball.changed" />
-      <Action Target="Visual;Monitor 1.Centre Console Panel.Misc Panel.SlipBall;Helios.AV8B.SlipBall;SlipBall" Name="set.Slip Ball Offset" />
+      <Action Target="Visual;Monitor 1.Centre Console Panel.Misc Panel.SlipBall;Helios.AV8B.SlipTurn;SlipBall" Name="set.Slip Ball Offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
@@ -4583,11 +4583,6 @@
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="Flight Instruments.AOA Flag.changed" />
       <Action Target="Visual;Monitor 1.Centre Console Panel.Flight Instrument Panel.Angle of Attack;Helios.AV8B.AoA;Angle of Attack" Name="set.Warning Flag" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="EDP.H2O Control indicator.changed" />
-      <Action Target="Visual;Monitor 1.EDP.Water Control Indicator;Helios.Base.Indicator;Water Control Indicator" Name="set.indicator" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
@@ -4696,13 +4691,8 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="EDP.H2O Control indicator.changed" />
-      <Action Target="Visual;Monitor 1.EDP.Engine Panel.Water Light Indicator;Helios.Base.Indicator;Water Light Indicator" Name="Water Light Indicator.set.indicator" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="False">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="EDP.H2O display.changed" />
-      <Action Target="Visual;Monitor 1.EDP.Engine Panel.Water Amount Indicator;Helios.AV8B.TwoDigitDisplay;Water Amount Indicator" Name="Water Amount Indicator.set.value" />
+      <Action Target="Visual;Monitor 1.EDP.Engine Panel.H2O Amount Indicator;Helios.AV8B.TwoDigitDisplay;H2O Amount Indicator" Name="H2O Amount Indicator.set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
@@ -5258,6 +5248,21 @@
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="Stores Management.Fuze Mode.changed" />
       <Action Target="Visual;Monitor 1.Stores Management Panel.Fuze Mode;Helios.AV8B.fuzeDisplay;Fuze Mode" Name="Fuze Mode.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="EDP.H2O flow indicator.changed" />
+      <Action Target="Visual;Monitor 1.EDP.Engine Panel.H2O Flow Indicator;Helios.Base.Indicator;H2O Flow Indicator" Name="H2O Flow Indicator.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="Flight Instruments.Turn Indicator.changed" />
+      <Action Target="Visual;Monitor 1.Centre Console Panel.Misc Panel.SlipBall;Helios.AV8B.SlipTurn;SlipBall" Name="set.Turn Indicator Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV8B" Name="Flight Instruments.Slip/Turn Flag.changed" />
+      <Action Target="Visual;Monitor 1.Centre Console Panel.Misc Panel.SlipBall;Helios.AV8B.SlipTurn;SlipBall" Name="set.Slip Turn Warning Flag" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
