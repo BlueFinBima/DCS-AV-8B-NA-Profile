@@ -23,8 +23,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Right Canopy Handle Open.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Right Canopy Handle Closed.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Right Canopy Handle Open.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Right Canopy Handle Closed.png</PositionTwoImage>
               <DefaultPosition>One</DefaultPosition>
               <Children />
             </Control>
@@ -43,8 +43,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Left Canopy Handle Open.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Left Canopy Handle Closed.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Left Canopy Handle Open.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Left Canopy Handle Closed.png</PositionTwoImage>
               <DefaultPosition>One</DefaultPosition>
               <Children />
             </Control>
@@ -76,7 +76,7 @@
               <Location>328,124</Location>
               <Size>45,45</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Common Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Common Knob.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -99,8 +99,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Water Control Indicator" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/Water Control Indicator.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/_transparant.png</OffImage>
+              <OnImage>{AV8B}/Images/Water Control Indicator.png</OnImage>
+              <OffImage>{AV8B}/Images/_transparant.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -141,7 +141,7 @@
               <Location>17,203</Location>
               <Size>50,50</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Common Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Common Knob.png</KnobImage>
               <Positions>
                 <Position Name="Off" Rotation="225" />
                 <Position Name="Stby" Rotation="305" />
@@ -160,7 +160,7 @@
               <Location>16,113</Location>
               <Size>50,50</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Common Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Common Knob.png</KnobImage>
               <Positions>
                 <Position Name="Off" Rotation="225" />
                 <Position Name="Auto" Rotation="300" />
@@ -179,7 +179,7 @@
               <Location>15,11</Location>
               <Size>40,40</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Common Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Common Knob.png</KnobImage>
               <Positions>
                 <Position Name="Off" Rotation="215" />
                 <Position Name="Posn 1" Rotation="280" />
@@ -227,8 +227,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Right Canopy Lock.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Right Canopy unLock.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Right Canopy Lock.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Right Canopy unLock.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -247,8 +247,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Ground Safety Handle Down.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Ground Safety Handle Up.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Ground Safety Handle Down.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Ground Safety Handle Up.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -261,8 +261,8 @@
           <Background />
           <Children>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="SAM Threat Annunciator" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/Threat SAM.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/_transparant.png</OffImage>
+              <OnImage>{AV8B}/Images/Threat SAM.png</OnImage>
+              <OffImage>{AV8B}/Images/_transparant.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -286,8 +286,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="CW Threat Annunciator" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/Threat CW.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/_transparant.png</OffImage>
+              <OnImage>{AV8B}/Images/Threat CW.png</OnImage>
+              <OffImage>{AV8B}/Images/_transparant.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -311,8 +311,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="AI Threat Annunciator" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/Threat AI.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/_transparant.png</OffImage>
+              <OnImage>{AV8B}/Images/Threat AI.png</OnImage>
+              <OffImage>{AV8B}/Images/_transparant.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -336,8 +336,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="AAA Threat Annunciator" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/Threat AAA.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/_transparant.png</OffImage>
+              <OnImage>{AV8B}/Images/Threat AAA.png</OnImage>
+              <OffImage>{AV8B}/Images/_transparant.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -492,7 +492,7 @@
                   <Location>60,193</Location>
                   <Size>100,100</Size>
                   <Hidden>False</Hidden>
-                  <KnobImage>{Helios}/Images/AV-8B/Defog Rotary.png</KnobImage>
+                  <KnobImage>{AV8B}/Images/Defog Rotary.png</KnobImage>
                   <Positions>
                     <Position Name="OFF" Rotation="270" />
                     <Position Name="SEA" Rotation="312" />
@@ -529,7 +529,7 @@
                   <Size>74,49</Size>
                   <Hidden>False</Hidden>
                   <Background>
-                    <Image>{Helios}/Images/AV-8B/Radio Cutout 2.png</Image>
+                    <Image>{AV8B}/Images/Radio Cutout 2.png</Image>
                     <ImageAlignment>Stretched</ImageAlignment>
                   </Background>
                   <Children />
@@ -539,7 +539,7 @@
                   <Size>159,45</Size>
                   <Hidden>False</Hidden>
                   <Background>
-                    <Image>{Helios}/Images/AV-8B/Radio Cutout 1.png</Image>
+                    <Image>{AV8B}/Images/Radio Cutout 1.png</Image>
                     <ImageAlignment>Stretched</ImageAlignment>
                   </Background>
                   <Children />
@@ -578,7 +578,7 @@
                   <Location>337,286</Location>
                   <Size>30,30</Size>
                   <Hidden>False</Hidden>
-                  <KnobImage>{Helios}/Images/AV-8B/Rotary.png</KnobImage>
+                  <KnobImage>{AV8B}/Images/Rotary.png</KnobImage>
                   <InitialValue>0.5</InitialValue>
                   <StepValue>0.001</StepValue>
                   <MaxValue>1</MaxValue>
@@ -595,7 +595,7 @@
                   <Location>57,17</Location>
                   <Size>40,40</Size>
                   <Hidden>False</Hidden>
-                  <KnobImage>{Helios}/Images/AV-8B/Rotary.png</KnobImage>
+                  <KnobImage>{AV8B}/Images/Rotary.png</KnobImage>
                   <InitialValue>0.5</InitialValue>
                   <StepValue>0.001</StepValue>
                   <MaxValue>1</MaxValue>
@@ -613,7 +613,7 @@
                   <Size>62,60</Size>
                   <Hidden>False</Hidden>
                   <Background>
-                    <Image>{Helios}/Images/AV-8B/ADI Cage Scale.png</Image>
+                    <Image>{AV8B}/Images/ADI Cage Scale.png</Image>
                     <ImageAlignment>Stretched</ImageAlignment>
                   </Background>
                   <Children>
@@ -621,7 +621,7 @@
                       <Location>19,18</Location>
                       <Size>43,42</Size>
                       <Hidden>False</Hidden>
-                      <KnobImage>{Helios}/Images/AV-8B/ADI Cage Knob.png</KnobImage>
+                      <KnobImage>{AV8B}/Images/ADI Cage Knob.png</KnobImage>
                       <InitialValue>0</InitialValue>
                       <StepValue>0.1</StepValue>
                       <MaxValue>1</MaxValue>
@@ -650,7 +650,7 @@
               <Location>100,42</Location>
               <Size>40,40</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Common Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Common Knob.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -667,7 +667,7 @@
               <Location>233,42</Location>
               <Size>40,40</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Common Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Common Knob.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -684,7 +684,7 @@
               <Location>301,42</Location>
               <Size>40,40</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Common Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Common Knob.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -742,13 +742,13 @@
           <Size>114,260</Size>
           <Hidden>False</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Water and CMBT Panel.png</Image>
+            <Image>{AV8B}/Images/Water and CMBT Panel.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="STO Annunciator" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/STO Indicator.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/STO Indicator Off.png</OffImage>
+              <OnImage>{AV8B}/Images/STO Indicator.png</OnImage>
+              <OffImage>{AV8B}/Images/STO Indicator Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -776,8 +776,8 @@
               <Size>60,59</Size>
               <Hidden>True</Hidden>
               <Type>Momentary</Type>
-              <Image>{Helios}/Images/AV-8B/Combat Button Off.png</Image>
-              <PushedImage>{Helios}/Images/AV-8B/Combat Button Pushed.png</PushedImage>
+              <Image>{AV8B}/Images/Combat Button Off.png</Image>
+              <PushedImage>{AV8B}/Images/Combat Button Pushed.png</PushedImage>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Switch H2O" SnapTarget="True" Locked="False">
@@ -787,9 +787,9 @@
               <SwitchType>OnOnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/H2O Switch TO.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/H2O Switch Norm.png</PositionTwoImage>
-              <PositionThreeImage>{Helios}/Images/AV-8B/H2O Switch VTOL.png</PositionThreeImage>
+              <PositionOneImage>{AV8B}/Images/H2O Switch TO.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/H2O Switch Norm.png</PositionTwoImage>
+              <PositionThreeImage>{AV8B}/Images/H2O Switch VTOL.png</PositionThreeImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -806,15 +806,15 @@
               <SwitchType>OnOnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Flaps Cruise.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Flaps Auto.png</PositionTwoImage>
-              <PositionThreeImage>{Helios}/Images/AV-8B/Flaps STOL.png</PositionThreeImage>
+              <PositionOneImage>{AV8B}/Images/Flaps Cruise.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Flaps Auto.png</PositionTwoImage>
+              <PositionThreeImage>{AV8B}/Images/Flaps STOL.png</PositionThreeImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="CMBT Annunciator" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/Combat Button SEL.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/Combat Button Off.png</OffImage>
+              <OnImage>{AV8B}/Images/Combat Button SEL.png</OnImage>
+              <OffImage>{AV8B}/Images/Combat Button Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -1023,8 +1023,8 @@
               <Size>50,50</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
-              <Image>{Helios}/Images/AV-8B/AV8BNA_FLR_SAL_Off.png</Image>
-              <PushedImage>{Helios}/Images/AV-8B/AV8BNA_FLR_SAL_On.png</PushedImage>
+              <Image>{AV8B}/Images/AV8BNA_FLR_SAL_Off.png</Image>
+              <PushedImage>{AV8B}/Images/AV8BNA_FLR_SAL_On.png</PushedImage>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Master Arm Switch" SnapTarget="True" Locked="False">
@@ -1034,8 +1034,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Master Arm Switch Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Master Arm Switch Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Master Arm Switch Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Master Arm Switch Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1060,7 +1060,7 @@
           <Size>50,200</Size>
           <Hidden>False</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Parking Brake.png</Image>
+            <Image>{AV8B}/Images/Parking Brake.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -1071,8 +1071,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Parking Brake Off.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Parking Brake On.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Parking Brake Off.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Parking Brake On.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1083,7 +1083,7 @@
           <Size>470,80</Size>
           <Hidden>False</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Blank Panel 2.png</Image>
+            <Image>{AV8B}/Images/Blank Panel 2.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -1103,7 +1103,7 @@
           <Size>470,80</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Blank Panel 2.png</Image>
+            <Image>{AV8B}/Images/Blank Panel 2.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -1420,7 +1420,7 @@
           <Size>400,502</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Internal Lights.png</Image>
+            <Image>{AV8B}/Images/Internal Lights.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -1437,7 +1437,7 @@
               <Location>270,42</Location>
               <Size>65,65</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Knob 3.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Knob 3.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -1454,7 +1454,7 @@
               <Location>143,44</Location>
               <Size>65,65</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Heart Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Heart Knob.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -1471,7 +1471,7 @@
               <Location>267,154</Location>
               <Size>65,65</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Knob 3.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Knob 3.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -1488,7 +1488,7 @@
               <Location>118,154</Location>
               <Size>65,65</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Knob 3.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Knob 3.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -1505,7 +1505,7 @@
               <Location>94,345</Location>
               <Size>80,80</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Selector Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Selector Knob.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -1590,7 +1590,7 @@
           <Size>400,427</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Radio Panel.png</Image>
+            <Image>{AV8B}/Images/Radio Panel.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -1610,8 +1610,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/2 way Dome Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/2 way Dome Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/2 way Dome Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/2 way Dome Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1622,8 +1622,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/2 way Dome Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/2 way Dome Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/2 way Dome Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/2 way Dome Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1634,9 +1634,9 @@
               <SwitchType>OnOnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/3way DomeHead Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/3way DomeHead Mid.png</PositionTwoImage>
-              <PositionThreeImage>{Helios}/Images/AV-8B/3way DomeHead Down.png</PositionThreeImage>
+              <PositionOneImage>{AV8B}/Images/3way DomeHead Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/3way DomeHead Mid.png</PositionTwoImage>
+              <PositionThreeImage>{AV8B}/Images/3way DomeHead Down.png</PositionThreeImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1647,8 +1647,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/2 way Dome Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/2 way Dome Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/2 way Dome Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/2 way Dome Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1659,9 +1659,9 @@
               <SwitchType>OnOnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/3way DomeHead Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/3way DomeHead Mid.png</PositionTwoImage>
-              <PositionThreeImage>{Helios}/Images/AV-8B/3way DomeHead Down.png</PositionThreeImage>
+              <PositionOneImage>{AV8B}/Images/3way DomeHead Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/3way DomeHead Mid.png</PositionTwoImage>
+              <PositionThreeImage>{AV8B}/Images/3way DomeHead Down.png</PositionThreeImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1694,7 +1694,7 @@
               <Location>82,337</Location>
               <Size>65,65</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Mic Volume Knob Lower.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Mic Volume Knob Lower.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -1711,7 +1711,7 @@
               <Location>92,347</Location>
               <Size>45,45</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Mic Volume Knob Upper.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Mic Volume Knob Upper.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -1728,7 +1728,7 @@
               <Location>56,14</Location>
               <Size>35,35</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/UVHF Volume Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/UVHF Volume Knob.png</KnobImage>
               <RotationStep>5</RotationStep>
               <StepValue>0.1</StepValue>
               <InitialRotation>0</InitialRotation>
@@ -1742,7 +1742,7 @@
               <Location>66,74</Location>
               <Size>58,58</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/UVHF Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/UVHF Knob.png</KnobImage>
               <Positions>
                 <Position Name="Zero" Rotation="50" />
                 <Position Name="Off" Rotation="90" />
@@ -1763,7 +1763,7 @@
               <Location>260,74</Location>
               <Size>58,58</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/UVHF Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/UVHF Knob.png</KnobImage>
               <Positions>
                 <Position Name="AJ/M" Rotation="50" />
                 <Position Name="AJ" Rotation="90" />
@@ -1784,7 +1784,7 @@
               <Location>296,21</Location>
               <Size>44,44</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Chan Freq Knob.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Chan Freq Knob.png</KnobImage>
               <RotationStep>5</RotationStep>
               <StepValue>0.1</StepValue>
               <InitialRotation>0</InitialRotation>
@@ -1864,8 +1864,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/2 way Dome Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/2 way Dome Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/2 way Dome Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/2 way Dome Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1876,8 +1876,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/2 way Dome Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/2 way Dome Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/2 way Dome Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/2 way Dome Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -1912,7 +1912,7 @@
           <Size>455,528</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Advisory Panel.png</Image>
+            <Image>{AV8B}/Images/Advisory Panel.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -3208,7 +3208,7 @@
           <Size>400,592</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Fuel and External Lights Panel.png</Image>
+            <Image>{AV8B}/Images/Fuel and External Lights Panel.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -3287,7 +3287,7 @@
               <Location>52,310</Location>
               <Size>90,90</Size>
               <Hidden>False</Hidden>
-              <KnobImage>{Helios}/Images/AV-8B/Defog Rotary.png</KnobImage>
+              <KnobImage>{AV8B}/Images/Defog Rotary.png</KnobImage>
               <InitialValue>0</InitialValue>
               <StepValue>0.1</StepValue>
               <MaxValue>1</MaxValue>
@@ -3344,9 +3344,9 @@
               <SwitchType>OnOnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Flaps Cruise.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Flaps Auto.png</PositionTwoImage>
-              <PositionThreeImage>{Helios}/Images/AV-8B/Flaps STOL.png</PositionThreeImage>
+              <PositionOneImage>{AV8B}/Images/Flaps Cruise.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Flaps Auto.png</PositionTwoImage>
+              <PositionThreeImage>{AV8B}/Images/Flaps STOL.png</PositionThreeImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -3357,9 +3357,9 @@
               <SwitchType>OnOnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Flaps Cruise.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Flaps Auto.png</PositionTwoImage>
-              <PositionThreeImage>{Helios}/Images/AV-8B/Flaps STOL.png</PositionThreeImage>
+              <PositionOneImage>{AV8B}/Images/Flaps Cruise.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Flaps Auto.png</PositionTwoImage>
+              <PositionThreeImage>{AV8B}/Images/Flaps STOL.png</PositionThreeImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -3370,8 +3370,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Hexagonal Switch On.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Hexagonal Switch Off.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Hexagonal Switch On.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Hexagonal Switch Off.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -3382,7 +3382,7 @@
           <Size>400,423</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/SAAHS Panel.png</Image>
+            <Image>{AV8B}/Images/SAAHS Panel.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -3452,9 +3452,9 @@
               <SwitchType>OnOnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/sw_lng-lgt_up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/sw_lng-lgt_cent.png</PositionTwoImage>
-              <PositionThreeImage>{Helios}/Images/AV-8B/sw_lng-lgt_down.png</PositionThreeImage>
+              <PositionOneImage>{AV8B}/Images/sw_lng-lgt_up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/sw_lng-lgt_cent.png</PositionTwoImage>
+              <PositionThreeImage>{AV8B}/Images/sw_lng-lgt_down.png</PositionThreeImage>
               <DefaultPosition>Three</DefaultPosition>
               <Children />
             </Control>
@@ -3465,8 +3465,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/AV8B Toggle Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/AV8B Toggle Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/AV8B Toggle Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/AV8B Toggle Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -3477,8 +3477,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/AV8B Toggle Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/AV8B Toggle Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/AV8B Toggle Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/AV8B Toggle Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -3489,8 +3489,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/AV8B Toggle Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/AV8B Toggle Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/AV8B Toggle Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/AV8B Toggle Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -3513,7 +3513,7 @@
           <Size>311,430</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Flaps and Gear Lever.png</Image>
+            <Image>{AV8B}/Images/Flaps and Gear Lever.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -3539,9 +3539,9 @@
                   <SwitchType>OnOnOn</SwitchType>
                   <Orientation>Vertical</Orientation>
                   <ClickType>Swipe</ClickType>
-                  <PositionOneImage>{Helios}/Images/AV-8B/Flaps Cruise.png</PositionOneImage>
-                  <PositionTwoImage>{Helios}/Images/AV-8B/Flaps Auto.png</PositionTwoImage>
-                  <PositionThreeImage>{Helios}/Images/AV-8B/Flaps STOL.png</PositionThreeImage>
+                  <PositionOneImage>{AV8B}/Images/Flaps Cruise.png</PositionOneImage>
+                  <PositionTwoImage>{AV8B}/Images/Flaps Auto.png</PositionTwoImage>
+                  <PositionThreeImage>{AV8B}/Images/Flaps STOL.png</PositionThreeImage>
                   <DefaultPosition>Two</DefaultPosition>
                   <Children />
                 </Control>
@@ -3605,11 +3605,11 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Gear Lever Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Gear Lever Dn.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Gear Lever Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Gear Lever Dn.png</PositionTwoImage>
               <Indicator>
-                <PositionOneImage>{Helios}/Images/AV-8B/Gear Lever Up Red.png</PositionOneImage>
-                <PositionTwoImage>{Helios}/Images/AV-8B/Gear Lever Dn Red.png</PositionTwoImage>
+                <PositionOneImage>{AV8B}/Images/Gear Lever Up Red.png</PositionOneImage>
+                <PositionTwoImage>{AV8B}/Images/Gear Lever Dn Red.png</PositionTwoImage>
               </Indicator>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
@@ -3734,7 +3734,7 @@
           <Size>158,225</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Landing Gear Lights.png</Image>
+            <Image>{AV8B}/Images/Landing Gear Lights.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Border>
@@ -3758,8 +3758,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Gear Lamp Main Warning" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/AV8BNA_Gear_Orange_M_On.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/AV8BNA_Gear_M_Off.png</OffImage>
+              <OnImage>{AV8B}/Images/AV8BNA_Gear_Orange_M_On.png</OnImage>
+              <OffImage>{AV8B}/Images/AV8BNA_Gear_M_Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -3783,8 +3783,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Gear Lamp Main Ready" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/AV8BNA_Gear_Green_M_On.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/AV8BNA_Gear_M_Off.png</OffImage>
+              <OnImage>{AV8B}/Images/AV8BNA_Gear_Green_M_On.png</OnImage>
+              <OffImage>{AV8B}/Images/AV8BNA_Gear_M_Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -3808,8 +3808,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Gear Lamp Right Warning" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/AV8BNA_Gear_Orange_R_On.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/AV8BNA_Gear_R_Off.png</OffImage>
+              <OnImage>{AV8B}/Images/AV8BNA_Gear_Orange_R_On.png</OnImage>
+              <OffImage>{AV8B}/Images/AV8BNA_Gear_R_Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -3833,8 +3833,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Gear Lamp Right Ready" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/AV8BNA_Gear_Green_R_On.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/AV8BNA_Gear_R_Off.png</OffImage>
+              <OnImage>{AV8B}/Images/AV8BNA_Gear_Green_R_On.png</OnImage>
+              <OffImage>{AV8B}/Images/AV8BNA_Gear_R_Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -3858,8 +3858,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Gear Lamp Left Warning" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/AV8BNA_Gear_Orange_L_On.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/AV8BNA_Gear_L_Off.png</OffImage>
+              <OnImage>{AV8B}/Images/AV8BNA_Gear_Orange_L_On.png</OnImage>
+              <OffImage>{AV8B}/Images/AV8BNA_Gear_L_Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -3883,8 +3883,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Gear Lamp Left Ready" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/AV8BNA_Gear_Green_L_On.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/AV8BNA_Gear_L_Off.png</OffImage>
+              <OnImage>{AV8B}/Images/AV8BNA_Gear_Green_L_On.png</OnImage>
+              <OffImage>{AV8B}/Images/AV8BNA_Gear_L_Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -3908,8 +3908,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Gear Lamp Nose Ready" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/AV8BNA_Gear_Green_N_On.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/AV8BNA_Gear_N_Off.png</OffImage>
+              <OnImage>{AV8B}/Images/AV8BNA_Gear_Green_N_On.png</OnImage>
+              <OffImage>{AV8B}/Images/AV8BNA_Gear_N_Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -3933,8 +3933,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Indicator" Name="Gear Lamp Nose Warning" SnapTarget="True" Locked="False">
-              <OnImage>{Helios}/Images/AV-8B/AV8BNA_Gear_Orange_N_On.png</OnImage>
-              <OffImage>{Helios}/Images/AV-8B/AV8BNA_Gear_N_Off.png</OffImage>
+              <OnImage>{AV8B}/Images/AV8BNA_Gear_Orange_N_On.png</OnImage>
+              <OffImage>{AV8B}/Images/AV8BNA_Gear_N_Off.png</OffImage>
               <Font>
                 <FontFamily>Franklin Gothic</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -3964,7 +3964,7 @@
           <Size>220,563</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Fuel Cutoff Panel 1.png</Image>
+            <Image>{AV8B}/Images/Fuel Cutoff Panel 1.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
@@ -3984,8 +3984,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Fuel Cutoff Lever Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Fuel Cutoff Lever Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Fuel Cutoff Lever Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Fuel Cutoff Lever Down.png</PositionTwoImage>
               <DefaultPosition>One</DefaultPosition>
               <Children />
             </Control>
@@ -3996,8 +3996,8 @@
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
               <ClickType>Swipe</ClickType>
-              <PositionOneImage>{Helios}/Images/AV-8B/Bulkhead DECS switch Up.png</PositionOneImage>
-              <PositionTwoImage>{Helios}/Images/AV-8B/Bulkhead DECS switch Down.png</PositionTwoImage>
+              <PositionOneImage>{AV8B}/Images/Bulkhead DECS switch Up.png</PositionOneImage>
+              <PositionTwoImage>{AV8B}/Images/Bulkhead DECS switch Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
@@ -4008,7 +4008,7 @@
           <Size>74,452</Size>
           <Hidden>True</Hidden>
           <Background>
-            <Image>{Helios}/Images/AV-8B/Seat and Lights.png</Image>
+            <Image>{AV8B}/Images/Seat and Lights.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
