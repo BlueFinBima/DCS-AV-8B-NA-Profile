@@ -1,7 +1,8 @@
 _  = function(p) return p; end;
 name = _('AV-8B Config');
 Description = 'AV-8B MFCD, ODU, UFC etc.  GUI Config'
---        x = displays[1].width + displays[2].width + 0;
+--        x = displays[1].width + displays[2].width + 0;
+
 
 if  displays and #displays >2 then
     primary = 
@@ -27,46 +28,28 @@ if  displays and #displays >2 then
 xo = displays[2].width;
 -- xo = 0;
 
-    LEFT_MFCD = 
-    {
-        x = displays[1].width + xo + 0;
-        y = 0;
-        width = 334;
-        height = 312;
+    LEFT_MFCD = 
+
+    {
+
+        x = displays[1].width + xo + 0;
+
+        y = 0;
+
+        width = 334;
+
+        height = 312;
+
     }
 
-    RIGHT_MFCD = 
+    RIGHT_MFCD = 
+
     {
         x = displays[1].width + xo + 340;
         y = 0;
         width = 334;
         height = 312;
     }
-
-    UFC_base = 
-    {
-        x = displays[1].width + xo + 0;
-        y = 320;
-        width = 453;
-        height = 385;
-    }
-
-    ODU_base =
-    {
-        x = displays[1].width + xo + 680;
-        y = 0;
-        width = 283;
-        height = 140;
-    }
-
-    UVHF_base =
-    {
-        x = displays[1].width + xo + 460;
-        y = 320;
-        width = 210;
-        height = 210;
-    }
-
     Viewports = {primary}
 else
     primary =
