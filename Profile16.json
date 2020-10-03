@@ -1,0 +1,13 @@
+{
+    "Choices": [
+        {
+            "Options": [
+                {
+                    "Description": "Aicraft:\t\tAV-8B N/A V4 (Pre-Release)\nRequirements:\tHelios 1.6.3405 or above\nDownload:\thttps://github.com/BlueFinBima/DCS-AV-8B-NA-Profile/releases\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t3rd October 2020",
+                    "Excludes": [
+                    ]
+                }
+            ]
+        }
+    ]
+}
