@@ -213,7 +213,7 @@
           <Size>119,97</Size>
           <Hidden>False</Hidden>
           <Background>
-            <Image>{AV-8B}/Images/Flaps Panel.png</Image>
+            <Image>AV-8B/Flaps Panel.png</Image>
             <ImageAlignment>Stretched</ImageAlignment>
           </Background>
           <Children>
