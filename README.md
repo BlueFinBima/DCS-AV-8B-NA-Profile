@@ -27,5 +27,6 @@ The latest version of the profile used Helios 1.6 features including ViewPort ma
 
 
 ## Notes
-* You must be running Helios **1.6.3045.3** or later
+* You must be running Helios **1.6.3045.3**  to **1.6.5101** to run the Version 4 of this profile.  
+* For version 5 of this profile, you need **1.6.5102** or above.
 * You **MUST** have installed the driver from Helios to allow communication between DCS and Helios.

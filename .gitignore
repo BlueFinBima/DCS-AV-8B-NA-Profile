@@ -1,0 +1,4 @@
+## Ignore temporary files and installer build results
+## 
+*.helios16
+temp/**
