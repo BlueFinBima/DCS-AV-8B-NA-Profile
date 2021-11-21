@@ -2361,22 +2361,32 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.SAI Pitch.changed" />
-      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_ADI Gauge;Helios.AV8B.ADI;Flight Instruments_ADI Gauge" Name="Flight Instruments.set.SAI Pitch" />
+      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Gauge;Helios.AV8B.SAI;Flight Instruments_SAI Gauge" Name="Flight Instruments.set.SAI Pitch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.SAI Bank.changed" />
-      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_ADI Gauge;Helios.AV8B.ADI;Flight Instruments_ADI Gauge" Name="Flight Instruments.set.SAI Bank" />
+      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Gauge;Helios.AV8B.SAI;Flight Instruments_SAI Gauge" Name="Flight Instruments.set.SAI Bank" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.SAI Cage/Pitch Adjust Knob.changed" />
-      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_ADI Gauge;Helios.AV8B.ADI;Flight Instruments_ADI Gauge" Name="Flight Instruments.set.SAI Pitch adjustment offset" />
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.SAI Pitch Adjust Knob.changed" />
+      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Gauge;Helios.AV8B.SAI;Flight Instruments_SAI Gauge" Name="Flight Instruments.set.SAI Pitch adjustment offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.SAI Warning Flag.changed" />
-      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_ADI Gauge;Helios.AV8B.ADI;Flight Instruments_ADI Gauge" Name="Flight Instruments.set.SAI Warning Flag" />
+      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Gauge;Helios.AV8B.SAI;Flight Instruments_SAI Gauge" Name="Flight Instruments.set.SAI Warning Flag" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.SAI Cage Pull Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Cage Pull Switch;Helios.Base.PushButton;Flight Instruments_SAI Cage Pull Switch" Name="Flight Instruments_SAI Cage Pull Switch.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.SAI Pitch Adjust Knob.changed" />
+      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Pitch Adjust Knob;Helios.Base.Potentiometer;Flight Instruments_SAI Pitch Adjust Knob" Name="Flight Instruments_SAI Pitch Adjust Knob.set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -3405,11 +3415,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="NAV course.Course Setting.changed" />
-      <Action Target="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_ADI Pitch Adjust;Helios.Base.Potentiometer;Flight Instruments_ADI Pitch Adjust" Name="Flight Instruments_ADI Pitch Adjust.set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.background.Front Cockpit.Master Arm Device.Master Arm Panel_Nav Button;Helios.Base.PushButton;Master Arm Panel_Nav Button" Name="Master Arm Panel_Nav Button.pushed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Master Modes.push.NAV Button" />
       <StaticValue />
@@ -4345,8 +4350,18 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_ADI Pitch Adjust;Helios.Base.Potentiometer;Flight Instruments_ADI Pitch Adjust" Name="Flight Instruments_ADI Pitch Adjust.value.changed" />
-      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.set.SAI Cage/Pitch Adjust Knob" />
+      <Trigger Source="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Cage Pull Switch;Helios.Base.PushButton;Flight Instruments_SAI Cage Pull Switch" Name="Flight Instruments_SAI Cage Pull Switch.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.push.SAI Cage Pull Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Cage Pull Switch;Helios.Base.PushButton;Flight Instruments_SAI Cage Pull Switch" Name="Flight Instruments_SAI Cage Pull Switch.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.release.SAI Cage Pull Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Front Cockpit.Flight Instrument Device.Flight Instruments_SAI Pitch Adjust Knob;Helios.Base.Potentiometer;Flight Instruments_SAI Pitch Adjust Knob" Name="Flight Instruments_SAI Pitch Adjust Knob.value.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Flight Instruments.set.SAI Pitch Adjust Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
