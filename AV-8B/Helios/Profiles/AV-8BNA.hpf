@@ -27,6 +27,31 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
+            <Control TypeIdentifier="Helios.Panel" Name="Chronology Panel" SnapTarget="True" Locked="False">
+              <Location>0,700</Location>
+              <Size>1920,293</Size>
+              <Hidden>False</Hidden>
+              <Background />
+              <Interaction>
+                <AllowInteractionFull>False</AllowInteractionFull>
+                <AllowInteractionNone>True</AllowInteractionNone>
+                <AllowInteractionLegacy>False</AllowInteractionLegacy>
+              </Interaction>
+              <Children>
+                <Control TypeIdentifier="Helios.AV8B.Stopwatch" Name="Stopwatch" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>122,142</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.AV8B.Clock" Name="Clock" SnapTarget="True" Locked="False">
+                  <Location>1696,38</Location>
+                  <Size>224,246</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Canopy Panel Right" SnapTarget="True" Locked="False">
@@ -1534,32 +1559,32 @@
       <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
       <StaticValue>"{LCONTROL}{LALT}a" "{LCONTROL}{LALT}s" </StaticValue>
     </Binding>
-	<Binding BypassCascadingTriggers="True">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.background.Front Cockpit.ODU Device.Option Display Unit_OptionDisplay1;Helios.Base.TextDisplay;Option Display Unit_OptionDisplay1" Name="Option Display Unit_OptionDisplay1.set.TextDisplay" />
       <StaticValue>VER-</StaticValue>
     </Binding>
-	<Binding BypassCascadingTriggers="True">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.background.Front Cockpit.ODU Device.Option Display Unit_OptionDisplay2;Helios.Base.TextDisplay;Option Display Unit_OptionDisplay2" Name="Option Display Unit_OptionDisplay2.set.TextDisplay" />
       <StaticValue>FIN</StaticValue>
     </Binding>
-	<Binding BypassCascadingTriggers="True">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.background.Front Cockpit.ODU Device.Option Display Unit_OptionDisplay3;Helios.Base.TextDisplay;Option Display Unit_OptionDisplay3" Name="Option Display Unit_OptionDisplay3.set.TextDisplay" />
       <StaticValue>2021</StaticValue>
     </Binding>
-	<Binding BypassCascadingTriggers="True">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.background.Front Cockpit.ODU Device.Option Display Unit_OptionDisplay4;Helios.Base.TextDisplay;Option Display Unit_OptionDisplay4" Name="Option Display Unit_OptionDisplay4.set.TextDisplay" />
       <StaticValue>BLUE</StaticValue>
     </Binding>
-	<Binding BypassCascadingTriggers="True">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.background.Front Cockpit.ODU Device.Option Display Unit_OptionDisplay5;Helios.Base.TextDisplay;Option Display Unit_OptionDisplay5" Name="Option Display Unit_OptionDisplay5.set.TextDisplay" />
       <StaticValue>BIMA</StaticValue>
     </Binding>
-	<Binding BypassCascadingTriggers="True">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.background.Front Cockpit.UFC Device.UFC_Scratchpad;Helios.Base.TextDisplay;UFC_Scratchpad" Name="UFC_Scratchpad.set.TextDisplay" />
       <StaticValue>5.0.0</StaticValue>
@@ -3415,6 +3440,46 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Stopwatch.Start/Stop Button.changed" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel.Stopwatch.Stopwatch_Start/Stop Button;Helios.Base.PushButton;Stopwatch_Start/Stop Button" Name="Stopwatch_Start/Stop Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Stopwatch.Lap/Reset Button.changed" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel.Stopwatch.Stopwatch_Lap/Reset Button;Helios.Base.PushButton;Stopwatch_Lap/Reset Button" Name="Stopwatch_Lap/Reset Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Stopwatch.Minutes.changed" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel.Stopwatch.Stopwatch_Stopwatch;Helios.AV8B.StopwatchDial;Stopwatch_Stopwatch" Name="Stopwatch.set.Minutes" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Stopwatch.Seconds.changed" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel.Stopwatch.Stopwatch_Stopwatch;Helios.AV8B.StopwatchDial;Stopwatch_Stopwatch" Name="Stopwatch.set.Seconds" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.Hours.changed" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel.Clock.Clock_Clock;Helios.AV8B.ClockFace;Clock_Clock" Name="Clock.set.Hours" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.Minutes.changed" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel.Clock.Clock_Clock;Helios.AV8B.ClockFace;Clock_Clock" Name="Clock.set.Minutes" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.Seconds.changed" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel.Clock.Clock_Clock;Helios.AV8B.ClockFace;Clock_Clock" Name="Clock.set.Seconds" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.Button.changed" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel.Clock.Clock_Button;Helios.Base.PushButton;Clock_Button" Name="Clock_Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.background.Front Cockpit.Master Arm Device.Master Arm Panel_Nav Button;Helios.Base.PushButton;Master Arm Panel_Nav Button" Name="Master Arm Panel_Nav Button.pushed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Master Modes.push.NAV Button" />
       <StaticValue />
@@ -4557,6 +4622,46 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.background.Front Cockpit.RWR / ECM Device.RWR Panel_RWR Volume;Helios.Base.Potentiometer;RWR Panel_RWR Volume" Name="RWR Panel_RWR Volume.value.changed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="RWR / ECM.set.Off/Volume" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Stopwatch.Stopwatch_Start/Stop Button;Helios.Base.PushButton;Stopwatch_Start/Stop Button" Name="Stopwatch_Start/Stop Button.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Stopwatch.push.Start/Stop Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Stopwatch.Stopwatch_Start/Stop Button;Helios.Base.PushButton;Stopwatch_Start/Stop Button" Name="Stopwatch_Start/Stop Button.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Stopwatch.release.Start/Stop Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Stopwatch.Stopwatch_Lap/Reset Button;Helios.Base.PushButton;Stopwatch_Lap/Reset Button" Name="Stopwatch_Lap/Reset Button.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Stopwatch.push.Lap/Reset Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Stopwatch.Stopwatch_Lap/Reset Button;Helios.Base.PushButton;Stopwatch_Lap/Reset Button" Name="Stopwatch_Lap/Reset Button.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Stopwatch.release.Lap/Reset Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Clock.Clock_Button;Helios.Base.PushButton;Clock_Button" Name="Clock_Button.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.push.Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Clock.Clock_Button;Helios.Base.PushButton;Clock_Button" Name="Clock_Button.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.release.Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Clock.Clock_Knob;Helios.Base.RotaryEncoder;Clock_Knob" Name="Clock_Knob.encoder.incremented" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.increment.Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Clock.Clock_Knob;Helios.Base.RotaryEncoder;Clock_Knob" Name="Clock_Knob.encoder.decremented" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.decrement.Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
