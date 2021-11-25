@@ -1587,7 +1587,7 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.background.Front Cockpit.UFC Device.UFC_Scratchpad;Helios.Base.TextDisplay;UFC_Scratchpad" Name="UFC_Scratchpad.set.TextDisplay" />
-      <StaticValue>5.0.0</StaticValue>
+      <StaticValue>profileversionnumber</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Master Modes.Nav Indicator.changed" />
