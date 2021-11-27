@@ -50,6 +50,24 @@
                   <Hidden>False</Hidden>
                   <Children />
                 </Control>
+                <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Stopwatch Button" SnapTarget="True" Locked="False">
+                  <Location>0,38</Location>
+                  <Size>87,104</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image />
+                  <PushedImage />
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Clock Button" SnapTarget="True" Locked="False">
+                  <Location>1696,38</Location>
+                  <Size>155,148</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image />
+                  <PushedImage />
+                  <Children />
+                </Control>
               </Children>
             </Control>
           </Children>
@@ -1327,8 +1345,8 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Panel Game Options" SnapTarget="True" Locked="False">
-          <Location>1658,0</Location>
-          <Size>262,55</Size>
+          <Location>1789,0</Location>
+          <Size>131,165</Size>
           <Hidden>False</Hidden>
           <Background />
           <Interaction>
@@ -1339,7 +1357,7 @@
           <Children>
             <Control TypeIdentifier="Helios.Panel" Name="Panel" SnapTarget="True" Locked="False">
               <Location>0,0</Location>
-              <Size>262,55</Size>
+              <Size>131,165</Size>
               <Hidden>False</Hidden>
               <Background>
                 <Color>#FF1E1E1E</Color>
@@ -1362,7 +1380,7 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="PB_HELIOS" SnapTarget="True" Locked="False">
-              <Location>205,8</Location>
+              <Location>72,8</Location>
               <Size>51,40</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
@@ -1389,7 +1407,7 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="PB_CLEAR" SnapTarget="True" Locked="False">
-              <Location>138,8</Location>
+              <Location>7,8</Location>
               <Size>51,40</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
@@ -1416,7 +1434,7 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="PB_FLIGHT" SnapTarget="True" Locked="False">
-              <Location>6,8</Location>
+              <Location>6,63</Location>
               <Size>51,40</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
@@ -1443,7 +1461,7 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="PB_GROUND" SnapTarget="True" Locked="False">
-              <Location>72,8</Location>
+              <Location>72,63</Location>
               <Size>51,40</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
@@ -1466,6 +1484,33 @@
                   </Padding>
                 </Font>
                 <Text>GROUND</Text>
+              </Text>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.PushButton" Name="PB_Clocks" SnapTarget="True" Locked="False">
+              <Location>6,118</Location>
+              <Size>51,40</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
+              <PushedImage>{Helios}/Images/Buttons/tactile-dark-square-in.png</PushedImage>
+              <Text>
+                <Color>#FFC0C0C0</Color>
+                <Font>
+                  <FontFamily>Franklin Gothic</FontFamily>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <FontSize>10</FontSize>
+                  <HorizontalAlignment>Center</HorizontalAlignment>
+                  <VerticalAlignment>Center</VerticalAlignment>
+                  <Padding>
+                    <Left>0</Left>
+                    <Top>0</Top>
+                    <Right>0</Right>
+                    <Bottom>0</Bottom>
+                  </Padding>
+                </Font>
+                <Text>CLOCKS</Text>
               </Text>
               <Children />
             </Control>
@@ -1588,6 +1633,16 @@
       <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
       <Action Target="Visual;Monitor 1.background.Front Cockpit.UFC Device.UFC_Scratchpad;Helios.Base.TextDisplay;UFC_Scratchpad" Name="UFC_Scratchpad.set.TextDisplay" />
       <StaticValue>profileversionnumber</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Started" />
+      <Action Target="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="set.hidden" />
+      <StaticValue>True</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.Base.ProfileInterface;Profile" Name="Reset" />
+      <Action Target="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="set.hidden" />
+      <StaticValue>True</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Master Modes.Nav Indicator.changed" />
@@ -4664,6 +4719,26 @@
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Clock.decrement.Knob" />
       <TriggerValue />
     </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Hide Stopwatch Button;Helios.Base.PushButton;Hide Stopwatch Button" Name="released" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel;Helios.Panel;Chronology Panel" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Hide Stopwatch Button;Helios.Base.PushButton;Hide Stopwatch Button" Name="released" />
+      <Action Target="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="set.hidden" />
+      <StaticValue>False</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Hide Clock Button;Helios.Base.PushButton;Hide Clock Button" Name="released" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel;Helios.Panel;Chronology Panel" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Chronology Panel.Hide Clock Button;Helios.Base.PushButton;Hide Clock Button" Name="released" />
+      <Action Target="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="set.hidden" />
+      <StaticValue>False</StaticValue>
+    </Binding>
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 1.Canopy Panel Right.Canopy Right Switch;Helios.Base.ToggleSwitch;Canopy Right Switch" Name="position.changed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Canopy Controls.set.Canopy Handle Right" />
@@ -5342,6 +5417,16 @@
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 1.Panel Game Options.PB_GROUND;Helios.Base.PushButton;PB_GROUND" Name="pushed" />
       <Action Target="Visual;Monitor 1.Parking Brake Panel;Helios.Panel;Parking Brake Panel" Name="set.hidden" />
+      <StaticValue>False</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="released" />
+      <Action Target="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="set.hidden" />
+      <StaticValue>True</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="released" />
+      <Action Target="Visual;Monitor 1.background.Chronology Panel;Helios.Panel;Chronology Panel" Name="set.hidden" />
       <StaticValue>False</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="False">
