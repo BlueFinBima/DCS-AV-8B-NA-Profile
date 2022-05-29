@@ -1,3 +1,4 @@
+[![CreateHelios16](https://github.com/BlueFinBima/DCS-AV-8B-NA-Profile/actions/workflows/BuildProfilePackage.yml/badge.svg)](https://github.com/BlueFinBima/DCS-AV-8B-NA-Profile/actions/workflows/BuildProfilePackage.yml)
 # DCS-AV-8B-NA-Profile
 This is a Helios profile for [Razbam's AV-8B N/A Aircraft](https://razbamsimulations.com/index.php/dcs/av8-b) designed for DCS World. 
 This profile utilises an aircraft specifc interface which was written into the BlueFinBima fork of Gadroc's Helios.  This can be downloaded from [Helios latest release](https://github.com/HeliosVirtualCockpit/Helios/releases)
