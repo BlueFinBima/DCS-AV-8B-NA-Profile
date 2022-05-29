@@ -50,8 +50,8 @@ jobs:
           echo ${{ env.VEHICLE }} - ${{ env.VEHICLECOMMONNAME }}
           echo "Commit SHA (short) - " ${{ steps.vars.outputs.sha_short }}
           echo "New Release - V " ${{ steps.bump_tag.outputs.tag }}
-      - run: mkdir -p output
       - run: |
+          mkdir -p output
           echo Substituting info in the Profile16.json manifest
           sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
           sed -i -- 's/_ReleaseDate/'"$(date "+%d %B %Y")"'/g' Profile16.json
@@ -63,11 +63,11 @@ jobs:
           sed -i -- 's#_ProjectURL#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_Repository#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_commit#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
-      # create a zip file using the runners shell
       - name: Package Files
-        run: zip -r output/${{ env.VEHICLE }}.helios16 ./Profile16.json ./LICENSE ./*.md ./${{ env.VEHICLE }}/ -x ".git/*" ".github/*" "${{ env.VEHICLE }}/Helios/Profiles/*.bak" "${{ env.VEHICLE }}/Helios/Profiles/*.hply"
+        run: |
+          mv ./${{ env.VEHICLE }}/Helios .
+          zip -r output/${{ env.VEHICLE }}.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Profiles/*.hply"
       - uses: actions/upload-artifact@v3
         with:
-          name: 'helios16 package'
+          name: ${{ env.VEHICLECOMMONNAME }} helios16 package
           path: output/${{ env.VEHICLE }}.helios16
-
