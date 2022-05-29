@@ -1,13 +1,13 @@
 {
 	"Authors": [
-			"BlueFinBima"
+			"_Author"
 		],
 	"License":	"GPL V3",
-	"Aicraft":	"AV-8B",
-	"Version":	"profileversionnumber.0",
+	"Aicraft":	"_Vehicle",
+	"Version":	"_ProfileVersionNumber",
 	"Description":	"Profile for Razbam's AV-8B Harrier in DCS World",
 	"Requirements":	"Two Thrustmaster Couger MFDs",
-	"Repository":	"https://github.com/BlueFinBima/DCS-AV-8B-NA-Profile/releases",
+	"Repository":	"_Repository",
 	"VersionsRequired": [
 		{
 			"Product":	"Helios",
@@ -20,10 +20,10 @@
 			"Message": "Select the required options",
             "Options": [
                 {
-					"Version":	"profileversionnumber.0",
+					"Version":	"_ProfileVersionNumber",
 					"AspectRatio": "16:9",
 					"NativeResolution": "1920x1080",
-                    "Description": "Aicraft:\t\tAV-8B N/A Vprofileversionnumber\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\thttps://github.com/BlueFinBima/DCS-AV-8B-NA-Profile/releases\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
+                    "Description": "Aicraft:\t\tAV-8B N/A _ProfileVersionNumber\nRequirements:\tHelios _MinimumReleaseLevel or above\nDownload:\t_Repository\nAspect Ratio:\t16:9\nDefault Size:\t1920x1080\nRelease Date:\t_ReleaseDate",
                     "Excludes": [
                     ],
 					"VersionsRequired": [
@@ -33,7 +33,7 @@
 												"Maximum":	null
 											}
 										],
-					"Repository":	"https://github.com/BlueFinBima/DCS-AV-8B-NA-Profile/releases"
+					"Repository":	"_Repository"
                 }
             ]
         }
