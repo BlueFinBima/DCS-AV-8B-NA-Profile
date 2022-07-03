@@ -3,7 +3,9 @@
 This is a Helios profile for [Razbam's AV-8B N/A Aircraft](https://razbamsimulations.com/index.php/dcs/av8-b) designed for DCS World. 
 This profile utilises an aircraft specifc interface which was written into the BlueFinBima fork of Gadroc's Helios.  This can be downloaded from [Helios latest release](https://github.com/HeliosVirtualCockpit/Helios/releases)
 In addition to the profile, the MFDs and RWR need to have tehir viewports exported.  Since I keep getting caught out by this, there are key bindings for exporting the MFDs which need to be used otherwise the external MFD screens will stay blank.  
-
+### Limited Support
+[Discord](https://discord.gg/WK44YUnwnQ)
+### Note
 [AV-8B MFD Viewport enablement](https://forums.eagle.ru/showpost.php?p=3333803&postcount=47)
 ```
 lctl+lalt+a  (Left MFD)
