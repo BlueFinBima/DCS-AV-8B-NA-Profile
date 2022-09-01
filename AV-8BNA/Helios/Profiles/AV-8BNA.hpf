@@ -4641,12 +4641,12 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.background.Front Cockpit.FQIS Device.Fuel Panel_Bingo Knob;Helios.Base.RotaryEncoder;Fuel Panel_Bingo Knob" Name="Fuel Panel_Bingo Knob.encoder.incremented" />
-      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Fuel Quantity.increment.Bingo Fuel Set Knob" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Fuel Quantity.set.Bingo Fuel Set Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.background.Front Cockpit.FQIS Device.Fuel Panel_Bingo Knob;Helios.Base.RotaryEncoder;Fuel Panel_Bingo Knob" Name="Fuel Panel_Bingo Knob.encoder.decremented" />
-      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Fuel Quantity.decrement.Bingo Fuel Set Knob" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Fuel Quantity.set.Bingo Fuel Set Knob" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
