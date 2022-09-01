@@ -2,3 +2,5 @@
 ## 
 *.helios16
 temp/**
+*.bak
+*.hply

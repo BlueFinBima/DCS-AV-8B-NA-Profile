@@ -17,7 +17,8 @@ on:
 env:
   VEHICLE: AV-8BNA
   VEHICLECOMMONNAME: AV-8B Harrier
-  MINHELIOSRELEASE: 1.6.5102.0000
+  MINHELIOSRELEASE: 1.6.5307.0000
+  PROFILENAME: AV-8BNA
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -52,6 +53,10 @@ jobs:
           echo "New Release - V " ${{ steps.bump_tag.outputs.tag }}
       - run: |
           mkdir -p output
+          smallTag=$(echo ${{ steps.bump_tag.outputs.tag }} | cut -c1-5)
+          echo 'Small Tag= '$smallTag
+          sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          mv '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' '${{ env.VEHICLE }}/Helios/Profiles/BlueFinBima_${{ env.PROFILENAME }}_'$smallTag'.hpf'
           echo Substituting info in the Profile16.json manifest
           sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
           sed -i -- 's/_ReleaseDate/'"$(date "+%d %B %Y")"'/g' Profile16.json
@@ -66,8 +71,9 @@ jobs:
       - name: Package Files
         run: |
           mv ./${{ env.VEHICLE }}/Helios .
-          zip -r output/${{ env.VEHICLE }}.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Profiles/*.hply"
+          zip -r output/${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Profiles/*.hply"
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.VEHICLECOMMONNAME }} helios16 package
-          path: output/${{ env.VEHICLE }}.helios16
+          name: ${{ env.VEHICLECOMMONNAME }} V${{ steps.bump_tag.outputs.tag }} helios16 package
+          path: output/${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}.helios16
+          retention-days: 2
