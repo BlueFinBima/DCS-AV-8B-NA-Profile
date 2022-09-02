@@ -37,6 +37,9 @@ jobs:
       - name: Set outputs
         id: vars
         run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%d-%m-%Y')"
       - name: Bump version and push 
         id: bump_tag
         uses: anothrNick/github-tag-action@1.36.0
@@ -56,6 +59,8 @@ jobs:
           smallTag=$(echo ${{ steps.bump_tag.outputs.tag }} | cut -c1-5)
           echo 'Small Tag= '$smallTag
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+          sed -i -- 's#_CurrentDate#'"${{ steps.date.outputs.date }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
+
           mv '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' '${{ env.VEHICLE }}/Helios/Profiles/BlueFinBima_${{ env.PROFILENAME }}_'$smallTag'.hpf'
           echo Substituting info in the Profile16.json manifest
           sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json

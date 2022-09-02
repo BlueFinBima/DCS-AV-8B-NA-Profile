@@ -1587,8 +1587,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Panel.Timer" Name="Splash Panel" SnapTarget="True" Locked="False">
-          <Location>660,340</Location>
-          <Size>600,400</Size>
+          <Location>660,290</Location>
+          <Size>600,500</Size>
           <Hidden>False</Hidden>
           <Background>
             <Color>#A01E1E1E</Color>
@@ -1620,30 +1620,6 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Text" Name="Splash Text" SnapTarget="True" Locked="False">
-              <FillBackground>False</FillBackground>
-              <BackgroundColor>#FF1E1E1E</BackgroundColor>
-              <FontColor>#FF12AE08</FontColor>
-              <Font>
-                <FontFamily>Helios Virtual Cockpit A-10C_ALQ_213</FontFamily>
-                <FontStyle>Normal</FontStyle>
-                <FontWeight>Normal</FontWeight>
-                <FontSize>32</FontSize>
-                <HorizontalAlignment>Center</HorizontalAlignment>
-                <VerticalAlignment>Top</VerticalAlignment>
-                <Padding>
-                  <Left>0</Left>
-                  <Top>0</Top>
-                  <Right>0</Right>
-                  <Bottom>0</Bottom>
-                </Padding>
-              </Font>
-              <Text>HELIOS PROFILE _ProfileVersionNumber BY BLUEFINBIMA</Text>
-              <Location>0,160</Location>
-              <Size>600,200</Size>
-              <Hidden>False</Hidden>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.Text" Name="Title" SnapTarget="True" Locked="False">
               <FillBackground>False</FillBackground>
               <BackgroundColor>#FF1E1E1E</BackgroundColor>
@@ -1668,7 +1644,55 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-          </Children>
+            <Control TypeIdentifier="Helios.Base.Text" Name="Splash Text" SnapTarget="True" Locked="False">
+              <FillBackground>False</FillBackground>
+              <BackgroundColor>#FF1E1E1E</BackgroundColor>
+              <FontColor>#FF12AE08</FontColor>
+              <Font>
+                <FontFamily>Helios Virtual Cockpit A-10C_ALQ_213</FontFamily>
+                <FontStyle>Normal</FontStyle>
+                <FontWeight>Normal</FontWeight>
+                <FontSize>32</FontSize>
+                <HorizontalAlignment>Center</HorizontalAlignment>
+                <VerticalAlignment>Top</VerticalAlignment>
+                <Padding>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Right>0</Right>
+                  <Bottom>0</Bottom>
+                </Padding>
+              </Font>
+              <Text>HELIOS PROFILE _ProfileVersionNumber BY BLUEFINBIMA</Text>
+              <Location>0,160</Location>
+              <Size>600,200</Size>
+              <Hidden>False</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Text" Name="Splash Text" SnapTarget="True" Locked="False">
+              <FillBackground>False</FillBackground>
+              <BackgroundColor>#FF1E1E1E</BackgroundColor>
+              <FontColor>#FF12AE08</FontColor>
+              <Font>
+                <FontFamily>Helios Virtual Cockpit A-10C_ALQ_213</FontFamily>
+                <FontStyle>Normal</FontStyle>
+                <FontWeight>Normal</FontWeight>
+                <FontSize>32</FontSize>
+                <HorizontalAlignment>Center</HorizontalAlignment>
+                <VerticalAlignment>Top</VerticalAlignment>
+                <Padding>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Right>0</Right>
+                  <Bottom>0</Bottom>
+                </Padding>
+              </Font>
+              <Text>_CurrentDate</Text>
+              <Location>0,220</Location>
+              <Size>600,200</Size>
+              <Hidden>False</Hidden>
+              <Children />
+            </Control>
+			</Children>
         </Control>
       </Children>
     </Monitor>
