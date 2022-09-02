@@ -39,7 +39,7 @@ jobs:
         run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%d-%m-%Y')"
+        run: echo "::set-output name=date::$(date +'%d-%b-%Y')"
       - name: Bump version and push 
         id: bump_tag
         uses: anothrNick/github-tag-action@1.36.0
