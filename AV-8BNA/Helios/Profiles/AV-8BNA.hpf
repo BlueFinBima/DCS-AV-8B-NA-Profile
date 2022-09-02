@@ -1644,7 +1644,7 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Text" Name="Splash Text" SnapTarget="True" Locked="False">
+            <Control TypeIdentifier="Helios.Base.Text" Name="Splash Text 1" SnapTarget="True" Locked="False">
               <FillBackground>False</FillBackground>
               <BackgroundColor>#FF1E1E1E</BackgroundColor>
               <FontColor>#FF12AE08</FontColor>
@@ -1668,7 +1668,7 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Text" Name="Splash Text" SnapTarget="True" Locked="False">
+            <Control TypeIdentifier="Helios.Base.Text" Name="Splash Text 2" SnapTarget="True" Locked="False">
               <FillBackground>False</FillBackground>
               <BackgroundColor>#FF1E1E1E</BackgroundColor>
               <FontColor>#FF12AE08</FontColor>
