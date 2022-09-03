@@ -70,6 +70,86 @@
                 </Control>
               </Children>
             </Control>
+            <Control TypeIdentifier="Helios.Panel" Name="Advisory Indicator Panel Small" SnapTarget="True" Locked="False">
+              <Location>1825,198</Location>
+              <Size>95,184</Size>
+              <Hidden>False</Hidden>
+              <Background>
+                <Color>#7F1E1E1E</Color>
+              </Background>
+              <Interaction>
+                <AllowInteractionFull>False</AllowInteractionFull>
+                <AllowInteractionNone>False</AllowInteractionNone>
+                <AllowInteractionLegacy>True</AllowInteractionLegacy>
+              </Interaction>
+              <Children>
+                <Control TypeIdentifier="Helios.AV8B.Advisory" Name="Advisory Indicators" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>95,184</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.BacklitPushButton" Name="Max Button" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>95,184</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image />
+                  <NormalColor>#01A8A8A8</NormalColor>
+                  <PushedColor>#01FFFFFF</PushedColor>
+                  <BacklitColorScale>0.9</BacklitColorScale>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.Panel" Name="ACNIP Panel Small" SnapTarget="True" Locked="False">
+              <Location>1825,386</Location>
+              <Size>94,118</Size>
+              <Hidden>False</Hidden>
+              <Background />
+              <Interaction>
+                <AllowInteractionFull>False</AllowInteractionFull>
+                <AllowInteractionNone>False</AllowInteractionNone>
+                <AllowInteractionLegacy>True</AllowInteractionLegacy>
+              </Interaction>
+              <Children>
+                <Control TypeIdentifier="Helios.AV8B.Radio" Name="Radio/ACNIP" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>94,118</Size>
+                  <Hidden>False</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.BacklitPushButton" Name="Push Button" SnapTarget="True" Locked="False">
+                  <Location>0,0</Location>
+                  <Size>94,118</Size>
+                  <Hidden>False</Hidden>
+                  <Type>Momentary</Type>
+                  <Image />
+                  <NormalColor>#01A8A8A8</NormalColor>
+                  <PushedColor>#01FFFFFF</PushedColor>
+                  <BacklitColorScale>0.9</BacklitColorScale>
+                  <Children />
+                </Control>
+              </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.Base.PushButton" Name="Toggle Right MPCD" SnapTarget="True" Locked="False">
+              <Location>1376,385</Location>
+              <Size>236,236</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image />
+              <PushedImage />
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.PushButton" Name="Toggle Left MPCD" SnapTarget="True" Locked="False">
+              <Location>312,385</Location>
+              <Size>236,236</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image />
+              <PushedImage />
+              <Children />
+            </Control>
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Canopy Panel Right" SnapTarget="True" Locked="False">
@@ -449,13 +529,21 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Panel" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>194,97</Size>
+            <Control TypeIdentifier="Helios.Base.BacklitPushButton" Name="Hide Panel" SnapTarget="True" Locked="False">
+              <Location>0,324</Location>
+              <Size>60,60</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
               <Image />
-              <PushedImage />
+              <NormalColor>#3F0BA50F</NormalColor>
+              <PushedColor>#7F0BA50F</PushedColor>
+              <BacklitColorScale>0.9</BacklitColorScale>
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F0AAA02</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
           </Children>
@@ -475,12 +563,18 @@
           </Interaction>
           <Children>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Button" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>400,502</Size>
+              <Location>10,435</Location>
+              <Size>60,60</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
               <Image />
               <PushedImage />
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F04AB1B</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Console Knob" SnapTarget="True" Locked="False">
@@ -641,19 +735,27 @@
             <AllowInteractionLegacy>True</AllowInteractionLegacy>
           </Interaction>
           <Children>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Panel" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>442,550</Size>
-              <Hidden>False</Hidden>
-              <Type>Momentary</Type>
-              <Image />
-              <PushedImage />
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.AV8B.Radio" Name="Radio/ACNIP" SnapTarget="True" Locked="False">
               <Location>0,0</Location>
               <Size>442,550</Size>
               <Hidden>False</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.BacklitPushButton" Name="Hide Panel" SnapTarget="True" Locked="False">
+              <Location>0,475</Location>
+              <Size>50,75</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image />
+              <NormalColor>#3F0BA50F</NormalColor>
+              <PushedColor>#7F0BA50F</PushedColor>
+              <BacklitColorScale>0.9</BacklitColorScale>
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F05AB19</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
           </Children>
@@ -672,15 +774,6 @@
             <AllowInteractionLegacy>True</AllowInteractionLegacy>
           </Interaction>
           <Children>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="Whole Advisory Panel Push Button" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>455,526</Size>
-              <Hidden>False</Hidden>
-              <Type>Momentary</Type>
-              <Image />
-              <PushedImage />
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.AV8B.ThreeDigitDisplay" Name="Hydraulic 2 Pressure Display" SnapTarget="True" Locked="False">
               <Location>74,191</Location>
               <Size>34,13</Size>
@@ -788,6 +881,23 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
+            <Control TypeIdentifier="Helios.Base.BacklitPushButton" Name="Advisory Panel Hide Button" SnapTarget="True" Locked="False">
+              <Location>48,301</Location>
+              <Size>60,60</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image />
+              <NormalColor>#3F0BA50F</NormalColor>
+              <PushedColor>#7F0BA50F</PushedColor>
+              <BacklitColorScale>0.9</BacklitColorScale>
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F05AB19</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
+              <Children />
+            </Control>
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Fuel and External Lights Panel" SnapTarget="True" Locked="False">
@@ -805,12 +915,18 @@
           </Interaction>
           <Children>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="Fuel and Ext Lights Hide Button" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>400,591</Size>
+              <Location>0,531</Location>
+              <Size>60,60</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
               <Image />
               <PushedImage />
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F08AD0D</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="H2O Dump Switch" SnapTarget="True" Locked="False">
@@ -1041,13 +1157,21 @@
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Panel" SnapTarget="True" Locked="False">
-              <Location>145,0</Location>
-              <Size>188,659</Size>
+            <Control TypeIdentifier="Helios.Base.BacklitPushButton" Name="Hide Panel" SnapTarget="True" Locked="False">
+              <Location>0,596</Location>
+              <Size>60,60</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
               <Image />
-              <PushedImage />
+              <NormalColor>#3F0BA50F</NormalColor>
+              <PushedColor>#7F0BA50F</PushedColor>
+              <BacklitColorScale>0.9</BacklitColorScale>
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F27B003</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
           </Children>
@@ -1067,12 +1191,18 @@
           </Interaction>
           <Children>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Button" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>69,452</Size>
+              <Location>5,387</Location>
+              <Size>60,60</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
               <Image />
               <PushedImage />
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F08AF08</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="External Light Mode Switch" SnapTarget="True" Locked="False">
@@ -1118,12 +1248,18 @@
           </Interaction>
           <Children>
             <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Button" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>393,417</Size>
+              <Location>100,355</Location>
+              <Size>60,60</Size>
               <Hidden>False</Hidden>
               <Type>Momentary</Type>
               <Image />
               <PushedImage />
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F30B103</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="RPS Yaw Switch" SnapTarget="True" Locked="False">
@@ -1250,19 +1386,25 @@
             <AllowInteractionLegacy>True</AllowInteractionLegacy>
           </Interaction>
           <Children>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Button" SnapTarget="True" Locked="False">
-              <Location>0,0</Location>
-              <Size>374,417</Size>
-              <Hidden>False</Hidden>
-              <Type>Momentary</Type>
-              <Image />
-              <PushedImage />
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.AV8B.GearPanel" Name="Flaps and Gear Panel" SnapTarget="True" Locked="False">
               <Location>0,0</Location>
               <Size>374,417</Size>
               <Hidden>False</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Button" SnapTarget="True" Locked="False">
+              <Location>42,332</Location>
+              <Size>60,60</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image />
+              <PushedImage />
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F1BB206</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
           </Children>
@@ -1281,15 +1423,6 @@
             <AllowInteractionLegacy>True</AllowInteractionLegacy>
           </Interaction>
           <Children>
-            <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Button" SnapTarget="True" Locked="False">
-              <Location>0,62</Location>
-              <Size>159,501</Size>
-              <Hidden>False</Hidden>
-              <Type>Momentary</Type>
-              <Image />
-              <PushedImage />
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="Fuel Cutoff Lever" SnapTarget="True" Locked="False">
               <Location>15,143</Location>
               <Size>168,409</Size>
@@ -1312,6 +1445,21 @@
               <PositionOneImage>{AV-8B}/Images/Bulkhead DECS switch Up.png</PositionOneImage>
               <PositionTwoImage>{AV-8B}/Images/Bulkhead DECS switch Down.png</PositionTwoImage>
               <DefaultPosition>Two</DefaultPosition>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.PushButton" Name="Hide Button" SnapTarget="True" Locked="False">
+              <Location>9,492</Location>
+              <Size>60,60</Size>
+              <Hidden>False</Hidden>
+              <Type>Momentary</Type>
+              <Image />
+              <PushedImage />
+              <Glyph>
+                <Type>Circle</Type>
+                <Color>#3F0EA401</Color>
+                <Thickness>5</Thickness>
+                <Scale>0.8</Scale>
+              </Glyph>
               <Children />
             </Control>
           </Children>
@@ -1542,15 +1690,6 @@
           <RequiresPatches>True</RequiresPatches>
           <Children />
         </Control>
-        <Control TypeIdentifier="Helios.Base.PushButton" Name="Toggle Right MPCD" SnapTarget="True" Locked="False">
-          <Location>1376,385</Location>
-          <Size>236,236</Size>
-          <Hidden>False</Hidden>
-          <Type>Momentary</Type>
-          <Image />
-          <PushedImage />
-          <Children />
-        </Control>
         <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="AV8B LEFT_MFCD" SnapTarget="True" Locked="False">
           <FillBackground>True</FillBackground>
           <BackgroundColor>#80E05B2B</BackgroundColor>
@@ -1575,15 +1714,6 @@
           <Hidden>False</Hidden>
           <ViewportName>AV8BNA_LEFT_MFCD</ViewportName>
           <RequiresPatches>True</RequiresPatches>
-          <Children />
-        </Control>
-        <Control TypeIdentifier="Helios.Base.PushButton" Name="Toggle Left MPCD" SnapTarget="True" Locked="False">
-          <Location>312,385</Location>
-          <Size>236,236</Size>
-          <Hidden>False</Hidden>
-          <Type>Momentary</Type>
-          <Image />
-          <PushedImage />
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Panel.Timer" Name="Splash Panel" SnapTarget="True" Locked="False">
@@ -1687,12 +1817,12 @@
                 </Padding>
               </Font>
               <Text>_CurrentDate</Text>
-              <Location>0,220</Location>
+              <Location>0,243</Location>
               <Size>600,200</Size>
               <Hidden>False</Hidden>
               <Children />
             </Control>
-			</Children>
+          </Children>
         </Control>
       </Children>
     </Monitor>
@@ -3643,6 +3773,1466 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OXY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OXY;Helios.Base.Indicator;Advisory Indicators_OXY" Name="Advisory Indicators_OXY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 1;Helios.Base.Indicator;Advisory Indicators_HYD 1" Name="Advisory Indicators_HYD 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L PUMP;Helios.Base.Indicator;Advisory Indicators_L PUMP" Name="Advisory Indicators_L PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L TRANS;Helios.Base.Indicator;Advisory Indicators_L TRANS" Name="Advisory Indicators_L TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 1;Helios.Base.Indicator;Advisory Indicators_FLAPS 1" Name="Advisory Indicators_FLAPS 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PROP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PROP;Helios.Base.Indicator;Advisory Indicators_PROP" Name="Advisory Indicators_PROP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU GEN.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU GEN;Helios.Base.Indicator;Advisory Indicators_APU GEN" Name="Advisory Indicators_APU GEN.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DEP RES.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DEP RES;Helios.Base.Indicator;Advisory Indicators_DEP RES" Name="Advisory Indicators_DEP RES.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CS COOL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CS COOL;Helios.Base.Indicator;Advisory Indicators_CS COOL" Name="Advisory Indicators_CS COOL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory INS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_INS;Helios.Base.Indicator;Advisory Indicators_INS" Name="Advisory Indicators_INS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFC;Helios.Base.Indicator;Advisory Indicators_AFC" Name="Advisory Indicators_AFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PITCH.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PITCH;Helios.Base.Indicator;Advisory Indicators_PITCH" Name="Advisory Indicators_PITCH.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ROLL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ROLL;Helios.Base.Indicator;Advisory Indicators_ROLL" Name="Advisory Indicators_ROLL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory YAW.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_YAW;Helios.Base.Indicator;Advisory Indicators_YAW" Name="Advisory Indicators_YAW.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ENG EXC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ENG EXC;Helios.Base.Indicator;Advisory Indicators_ENG EXC" Name="Advisory Indicators_ENG EXC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory WSHLD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_WSHLD;Helios.Base.Indicator;Advisory Indicators_WSHLD" Name="Advisory Indicators_WSHLD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 2;Helios.Base.Indicator;Advisory Indicators_HYD 2" Name="Advisory Indicators_HYD 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R PUMP;Helios.Base.Indicator;Advisory Indicators_R PUMP" Name="Advisory Indicators_R PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R TRANS;Helios.Base.Indicator;Advisory Indicators_R TRANS" Name="Advisory Indicators_R TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 2;Helios.Base.Indicator;Advisory Indicators_FLAPS 2" Name="Advisory Indicators_FLAPS 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LIDS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LIDS;Helios.Base.Indicator;Advisory Indicators_LIDS" Name="Advisory Indicators_LIDS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 1;Helios.Base.Indicator;Advisory Indicators_Blank 1" Name="Advisory Indicators_Blank 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DC;Helios.Base.Indicator;Advisory Indicators_DC" Name="Advisory Indicators_DC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LOAD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LOAD;Helios.Base.Indicator;Advisory Indicators_LOAD" Name="Advisory Indicators_LOAD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SKID.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SKID;Helios.Base.Indicator;Advisory Indicators_SKID" Name="Advisory Indicators_SKID.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory C*AUT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_C*AUT;Helios.Base.Indicator;Advisory Indicators_C*AUT" Name="Advisory Indicators_C*AUT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory IFF.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_IFF;Helios.Base.Indicator;Advisory Indicators_IFF" Name="Advisory Indicators_IFF.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFT BAY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFT BAY;Helios.Base.Indicator;Advisory Indicators_AFT BAY" Name="Advisory Indicators_AFT BAY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW NOGO;Helios.Base.Indicator;Advisory Indicators_CW NOGO" Name="Advisory Indicators_CW NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P NOGO;Helios.Base.Indicator;Advisory Indicators_P NOGO" Name="Advisory Indicators_P NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AUT FLP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AUT FLP;Helios.Base.Indicator;Advisory Indicators_AUT FLP" Name="Advisory Indicators_AUT FLP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OIL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OIL;Helios.Base.Indicator;Advisory Indicators_OIL" Name="Advisory Indicators_OIL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory GPS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_GPS;Helios.Base.Indicator;Advisory Indicators_GPS" Name="Advisory Indicators_GPS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory STBY TRU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_STBY TR;Helios.Base.Indicator;Advisory Indicators_STBY TR" Name="Advisory Indicators_STBY TR.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CANOPY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CANOPY;Helios.Base.Indicator;Advisory Indicators_CANOPY" Name="Advisory Indicators_CANOPY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory EFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_EFC;Helios.Base.Indicator;Advisory Indicators_EFC" Name="Advisory Indicators_EFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory H2O SEL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_H2O SEL;Helios.Base.Indicator;Advisory Indicators_H2O SEL" Name="Advisory Indicators_H2O SEL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SPD BRK.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SPD BRK;Helios.Base.Indicator;Advisory Indicators_SPD BRK" Name="Advisory Indicators_SPD BRK.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AV BIT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AV BIT;Helios.Base.Indicator;Advisory Indicators_AV BIT" Name="Advisory Indicators_AV BIT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P JAM;Helios.Base.Indicator;Advisory Indicators_P JAM" Name="Advisory Indicators_P JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW JAM;Helios.Base.Indicator;Advisory Indicators_CW JAM" Name="Advisory Indicators_CW JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory NWS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_NWS;Helios.Base.Indicator;Advisory Indicators_NWS" Name="Advisory Indicators_NWS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU;Helios.Base.Indicator;Advisory Indicators_APU" Name="Advisory Indicators_APU.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DROOP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DROOP;Helios.Base.Indicator;Advisory Indicators_DROOP" Name="Advisory Indicators_DROOP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 2;Helios.Base.Indicator;Advisory Indicators_Blank 2" Name="Advisory Indicators_Blank 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory JMR HOT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_JMR HOT;Helios.Base.Indicator;Advisory Indicators_JMR HOT" Name="Advisory Indicators_JMR HOT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory REPLY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_REPLY;Helios.Base.Indicator;Advisory Indicators_REPLY" Name="Advisory Indicators_REPLY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OXY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OXY;Helios.Base.Indicator;Advisory Indicators_OXY" Name="Advisory Indicators_OXY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OXY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OXY;Helios.Base.Indicator;Advisory Indicators_OXY" Name="Advisory Indicators_OXY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OXY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OXY;Helios.Base.Indicator;Advisory Indicators_OXY" Name="Advisory Indicators_OXY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OXY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OXY;Helios.Base.Indicator;Advisory Indicators_OXY" Name="Advisory Indicators_OXY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 1;Helios.Base.Indicator;Advisory Indicators_HYD 1" Name="Advisory Indicators_HYD 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 1;Helios.Base.Indicator;Advisory Indicators_HYD 1" Name="Advisory Indicators_HYD 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 1;Helios.Base.Indicator;Advisory Indicators_HYD 1" Name="Advisory Indicators_HYD 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 1;Helios.Base.Indicator;Advisory Indicators_HYD 1" Name="Advisory Indicators_HYD 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L PUMP;Helios.Base.Indicator;Advisory Indicators_L PUMP" Name="Advisory Indicators_L PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L PUMP;Helios.Base.Indicator;Advisory Indicators_L PUMP" Name="Advisory Indicators_L PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L PUMP;Helios.Base.Indicator;Advisory Indicators_L PUMP" Name="Advisory Indicators_L PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L PUMP;Helios.Base.Indicator;Advisory Indicators_L PUMP" Name="Advisory Indicators_L PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L TRANS;Helios.Base.Indicator;Advisory Indicators_L TRANS" Name="Advisory Indicators_L TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L TRANS;Helios.Base.Indicator;Advisory Indicators_L TRANS" Name="Advisory Indicators_L TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L TRANS;Helios.Base.Indicator;Advisory Indicators_L TRANS" Name="Advisory Indicators_L TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory L TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_L TRANS;Helios.Base.Indicator;Advisory Indicators_L TRANS" Name="Advisory Indicators_L TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 1;Helios.Base.Indicator;Advisory Indicators_FLAPS 1" Name="Advisory Indicators_FLAPS 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 1;Helios.Base.Indicator;Advisory Indicators_FLAPS 1" Name="Advisory Indicators_FLAPS 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 1;Helios.Base.Indicator;Advisory Indicators_FLAPS 1" Name="Advisory Indicators_FLAPS 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 1;Helios.Base.Indicator;Advisory Indicators_FLAPS 1" Name="Advisory Indicators_FLAPS 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PROP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PROP;Helios.Base.Indicator;Advisory Indicators_PROP" Name="Advisory Indicators_PROP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PROP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PROP;Helios.Base.Indicator;Advisory Indicators_PROP" Name="Advisory Indicators_PROP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PROP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PROP;Helios.Base.Indicator;Advisory Indicators_PROP" Name="Advisory Indicators_PROP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PROP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PROP;Helios.Base.Indicator;Advisory Indicators_PROP" Name="Advisory Indicators_PROP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU GEN.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU GEN;Helios.Base.Indicator;Advisory Indicators_APU GEN" Name="Advisory Indicators_APU GEN.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU GEN.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU GEN;Helios.Base.Indicator;Advisory Indicators_APU GEN" Name="Advisory Indicators_APU GEN.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU GEN.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU GEN;Helios.Base.Indicator;Advisory Indicators_APU GEN" Name="Advisory Indicators_APU GEN.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU GEN.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU GEN;Helios.Base.Indicator;Advisory Indicators_APU GEN" Name="Advisory Indicators_APU GEN.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DEP RES.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DEP RES;Helios.Base.Indicator;Advisory Indicators_DEP RES" Name="Advisory Indicators_DEP RES.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DEP RES.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DEP RES;Helios.Base.Indicator;Advisory Indicators_DEP RES" Name="Advisory Indicators_DEP RES.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DEP RES.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DEP RES;Helios.Base.Indicator;Advisory Indicators_DEP RES" Name="Advisory Indicators_DEP RES.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DEP RES.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DEP RES;Helios.Base.Indicator;Advisory Indicators_DEP RES" Name="Advisory Indicators_DEP RES.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CS COOL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CS COOL;Helios.Base.Indicator;Advisory Indicators_CS COOL" Name="Advisory Indicators_CS COOL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CS COOL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CS COOL;Helios.Base.Indicator;Advisory Indicators_CS COOL" Name="Advisory Indicators_CS COOL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CS COOL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CS COOL;Helios.Base.Indicator;Advisory Indicators_CS COOL" Name="Advisory Indicators_CS COOL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CS COOL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CS COOL;Helios.Base.Indicator;Advisory Indicators_CS COOL" Name="Advisory Indicators_CS COOL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory INS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_INS;Helios.Base.Indicator;Advisory Indicators_INS" Name="Advisory Indicators_INS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory INS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_INS;Helios.Base.Indicator;Advisory Indicators_INS" Name="Advisory Indicators_INS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory INS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_INS;Helios.Base.Indicator;Advisory Indicators_INS" Name="Advisory Indicators_INS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory INS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_INS;Helios.Base.Indicator;Advisory Indicators_INS" Name="Advisory Indicators_INS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFC;Helios.Base.Indicator;Advisory Indicators_AFC" Name="Advisory Indicators_AFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFC;Helios.Base.Indicator;Advisory Indicators_AFC" Name="Advisory Indicators_AFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFC;Helios.Base.Indicator;Advisory Indicators_AFC" Name="Advisory Indicators_AFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFC;Helios.Base.Indicator;Advisory Indicators_AFC" Name="Advisory Indicators_AFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PITCH.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PITCH;Helios.Base.Indicator;Advisory Indicators_PITCH" Name="Advisory Indicators_PITCH.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PITCH.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PITCH;Helios.Base.Indicator;Advisory Indicators_PITCH" Name="Advisory Indicators_PITCH.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PITCH.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PITCH;Helios.Base.Indicator;Advisory Indicators_PITCH" Name="Advisory Indicators_PITCH.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory PITCH.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_PITCH;Helios.Base.Indicator;Advisory Indicators_PITCH" Name="Advisory Indicators_PITCH.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ROLL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ROLL;Helios.Base.Indicator;Advisory Indicators_ROLL" Name="Advisory Indicators_ROLL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ROLL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ROLL;Helios.Base.Indicator;Advisory Indicators_ROLL" Name="Advisory Indicators_ROLL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ROLL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ROLL;Helios.Base.Indicator;Advisory Indicators_ROLL" Name="Advisory Indicators_ROLL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ROLL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ROLL;Helios.Base.Indicator;Advisory Indicators_ROLL" Name="Advisory Indicators_ROLL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory YAW.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_YAW;Helios.Base.Indicator;Advisory Indicators_YAW" Name="Advisory Indicators_YAW.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory YAW.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_YAW;Helios.Base.Indicator;Advisory Indicators_YAW" Name="Advisory Indicators_YAW.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory YAW.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_YAW;Helios.Base.Indicator;Advisory Indicators_YAW" Name="Advisory Indicators_YAW.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory YAW.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_YAW;Helios.Base.Indicator;Advisory Indicators_YAW" Name="Advisory Indicators_YAW.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ENG EXC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ENG EXC;Helios.Base.Indicator;Advisory Indicators_ENG EXC" Name="Advisory Indicators_ENG EXC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ENG EXC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ENG EXC;Helios.Base.Indicator;Advisory Indicators_ENG EXC" Name="Advisory Indicators_ENG EXC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ENG EXC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ENG EXC;Helios.Base.Indicator;Advisory Indicators_ENG EXC" Name="Advisory Indicators_ENG EXC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory ENG EXC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_ENG EXC;Helios.Base.Indicator;Advisory Indicators_ENG EXC" Name="Advisory Indicators_ENG EXC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory WSHLD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_WSHLD;Helios.Base.Indicator;Advisory Indicators_WSHLD" Name="Advisory Indicators_WSHLD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory WSHLD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_WSHLD;Helios.Base.Indicator;Advisory Indicators_WSHLD" Name="Advisory Indicators_WSHLD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory WSHLD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_WSHLD;Helios.Base.Indicator;Advisory Indicators_WSHLD" Name="Advisory Indicators_WSHLD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory WSHLD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_WSHLD;Helios.Base.Indicator;Advisory Indicators_WSHLD" Name="Advisory Indicators_WSHLD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 2;Helios.Base.Indicator;Advisory Indicators_HYD 2" Name="Advisory Indicators_HYD 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 2;Helios.Base.Indicator;Advisory Indicators_HYD 2" Name="Advisory Indicators_HYD 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 2;Helios.Base.Indicator;Advisory Indicators_HYD 2" Name="Advisory Indicators_HYD 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory HYD 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_HYD 2;Helios.Base.Indicator;Advisory Indicators_HYD 2" Name="Advisory Indicators_HYD 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R PUMP;Helios.Base.Indicator;Advisory Indicators_R PUMP" Name="Advisory Indicators_R PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R PUMP;Helios.Base.Indicator;Advisory Indicators_R PUMP" Name="Advisory Indicators_R PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R PUMP;Helios.Base.Indicator;Advisory Indicators_R PUMP" Name="Advisory Indicators_R PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R PUMP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R PUMP;Helios.Base.Indicator;Advisory Indicators_R PUMP" Name="Advisory Indicators_R PUMP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R TRANS;Helios.Base.Indicator;Advisory Indicators_R TRANS" Name="Advisory Indicators_R TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R TRANS;Helios.Base.Indicator;Advisory Indicators_R TRANS" Name="Advisory Indicators_R TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R TRANS;Helios.Base.Indicator;Advisory Indicators_R TRANS" Name="Advisory Indicators_R TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory R TRANS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_R TRANS;Helios.Base.Indicator;Advisory Indicators_R TRANS" Name="Advisory Indicators_R TRANS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 2;Helios.Base.Indicator;Advisory Indicators_FLAPS 2" Name="Advisory Indicators_FLAPS 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 2;Helios.Base.Indicator;Advisory Indicators_FLAPS 2" Name="Advisory Indicators_FLAPS 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 2;Helios.Base.Indicator;Advisory Indicators_FLAPS 2" Name="Advisory Indicators_FLAPS 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory FLAPS 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_FLAPS 2;Helios.Base.Indicator;Advisory Indicators_FLAPS 2" Name="Advisory Indicators_FLAPS 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LIDS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LIDS;Helios.Base.Indicator;Advisory Indicators_LIDS" Name="Advisory Indicators_LIDS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LIDS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LIDS;Helios.Base.Indicator;Advisory Indicators_LIDS" Name="Advisory Indicators_LIDS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LIDS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LIDS;Helios.Base.Indicator;Advisory Indicators_LIDS" Name="Advisory Indicators_LIDS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LIDS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LIDS;Helios.Base.Indicator;Advisory Indicators_LIDS" Name="Advisory Indicators_LIDS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 1;Helios.Base.Indicator;Advisory Indicators_Blank 1" Name="Advisory Indicators_Blank 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 1;Helios.Base.Indicator;Advisory Indicators_Blank 1" Name="Advisory Indicators_Blank 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 1;Helios.Base.Indicator;Advisory Indicators_Blank 1" Name="Advisory Indicators_Blank 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 1.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 1;Helios.Base.Indicator;Advisory Indicators_Blank 1" Name="Advisory Indicators_Blank 1.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DC;Helios.Base.Indicator;Advisory Indicators_DC" Name="Advisory Indicators_DC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DC;Helios.Base.Indicator;Advisory Indicators_DC" Name="Advisory Indicators_DC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DC;Helios.Base.Indicator;Advisory Indicators_DC" Name="Advisory Indicators_DC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DC;Helios.Base.Indicator;Advisory Indicators_DC" Name="Advisory Indicators_DC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LOAD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LOAD;Helios.Base.Indicator;Advisory Indicators_LOAD" Name="Advisory Indicators_LOAD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LOAD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LOAD;Helios.Base.Indicator;Advisory Indicators_LOAD" Name="Advisory Indicators_LOAD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LOAD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LOAD;Helios.Base.Indicator;Advisory Indicators_LOAD" Name="Advisory Indicators_LOAD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory LOAD.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_LOAD;Helios.Base.Indicator;Advisory Indicators_LOAD" Name="Advisory Indicators_LOAD.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SKID.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SKID;Helios.Base.Indicator;Advisory Indicators_SKID" Name="Advisory Indicators_SKID.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SKID.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SKID;Helios.Base.Indicator;Advisory Indicators_SKID" Name="Advisory Indicators_SKID.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SKID.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SKID;Helios.Base.Indicator;Advisory Indicators_SKID" Name="Advisory Indicators_SKID.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SKID.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SKID;Helios.Base.Indicator;Advisory Indicators_SKID" Name="Advisory Indicators_SKID.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory C*AUT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_C*AUT;Helios.Base.Indicator;Advisory Indicators_C*AUT" Name="Advisory Indicators_C*AUT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory C*AUT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_C*AUT;Helios.Base.Indicator;Advisory Indicators_C*AUT" Name="Advisory Indicators_C*AUT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory C*AUT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_C*AUT;Helios.Base.Indicator;Advisory Indicators_C*AUT" Name="Advisory Indicators_C*AUT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory C*AUT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_C*AUT;Helios.Base.Indicator;Advisory Indicators_C*AUT" Name="Advisory Indicators_C*AUT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory IFF.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_IFF;Helios.Base.Indicator;Advisory Indicators_IFF" Name="Advisory Indicators_IFF.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory IFF.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_IFF;Helios.Base.Indicator;Advisory Indicators_IFF" Name="Advisory Indicators_IFF.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory IFF.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_IFF;Helios.Base.Indicator;Advisory Indicators_IFF" Name="Advisory Indicators_IFF.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory IFF.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_IFF;Helios.Base.Indicator;Advisory Indicators_IFF" Name="Advisory Indicators_IFF.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFT BAY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFT BAY;Helios.Base.Indicator;Advisory Indicators_AFT BAY" Name="Advisory Indicators_AFT BAY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFT BAY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFT BAY;Helios.Base.Indicator;Advisory Indicators_AFT BAY" Name="Advisory Indicators_AFT BAY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFT BAY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFT BAY;Helios.Base.Indicator;Advisory Indicators_AFT BAY" Name="Advisory Indicators_AFT BAY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AFT BAY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AFT BAY;Helios.Base.Indicator;Advisory Indicators_AFT BAY" Name="Advisory Indicators_AFT BAY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW NOGO;Helios.Base.Indicator;Advisory Indicators_CW NOGO" Name="Advisory Indicators_CW NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW NOGO;Helios.Base.Indicator;Advisory Indicators_CW NOGO" Name="Advisory Indicators_CW NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW NOGO;Helios.Base.Indicator;Advisory Indicators_CW NOGO" Name="Advisory Indicators_CW NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW NOGO;Helios.Base.Indicator;Advisory Indicators_CW NOGO" Name="Advisory Indicators_CW NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P NOGO;Helios.Base.Indicator;Advisory Indicators_P NOGO" Name="Advisory Indicators_P NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P NOGO;Helios.Base.Indicator;Advisory Indicators_P NOGO" Name="Advisory Indicators_P NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P NOGO;Helios.Base.Indicator;Advisory Indicators_P NOGO" Name="Advisory Indicators_P NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P NOGO.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P NOGO;Helios.Base.Indicator;Advisory Indicators_P NOGO" Name="Advisory Indicators_P NOGO.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AUT FLP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AUT FLP;Helios.Base.Indicator;Advisory Indicators_AUT FLP" Name="Advisory Indicators_AUT FLP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AUT FLP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AUT FLP;Helios.Base.Indicator;Advisory Indicators_AUT FLP" Name="Advisory Indicators_AUT FLP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AUT FLP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AUT FLP;Helios.Base.Indicator;Advisory Indicators_AUT FLP" Name="Advisory Indicators_AUT FLP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AUT FLP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AUT FLP;Helios.Base.Indicator;Advisory Indicators_AUT FLP" Name="Advisory Indicators_AUT FLP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OIL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OIL;Helios.Base.Indicator;Advisory Indicators_OIL" Name="Advisory Indicators_OIL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OIL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OIL;Helios.Base.Indicator;Advisory Indicators_OIL" Name="Advisory Indicators_OIL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OIL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OIL;Helios.Base.Indicator;Advisory Indicators_OIL" Name="Advisory Indicators_OIL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory OIL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_OIL;Helios.Base.Indicator;Advisory Indicators_OIL" Name="Advisory Indicators_OIL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory GPS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_GPS;Helios.Base.Indicator;Advisory Indicators_GPS" Name="Advisory Indicators_GPS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory GPS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_GPS;Helios.Base.Indicator;Advisory Indicators_GPS" Name="Advisory Indicators_GPS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory GPS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_GPS;Helios.Base.Indicator;Advisory Indicators_GPS" Name="Advisory Indicators_GPS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory GPS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_GPS;Helios.Base.Indicator;Advisory Indicators_GPS" Name="Advisory Indicators_GPS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory STBY TRU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_STBY TR;Helios.Base.Indicator;Advisory Indicators_STBY TR" Name="Advisory Indicators_STBY TR.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory STBY TRU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_STBY TR;Helios.Base.Indicator;Advisory Indicators_STBY TR" Name="Advisory Indicators_STBY TR.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory STBY TRU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_STBY TR;Helios.Base.Indicator;Advisory Indicators_STBY TR" Name="Advisory Indicators_STBY TR.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory STBY TRU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_STBY TR;Helios.Base.Indicator;Advisory Indicators_STBY TR" Name="Advisory Indicators_STBY TR.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CANOPY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CANOPY;Helios.Base.Indicator;Advisory Indicators_CANOPY" Name="Advisory Indicators_CANOPY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CANOPY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CANOPY;Helios.Base.Indicator;Advisory Indicators_CANOPY" Name="Advisory Indicators_CANOPY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CANOPY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CANOPY;Helios.Base.Indicator;Advisory Indicators_CANOPY" Name="Advisory Indicators_CANOPY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CANOPY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CANOPY;Helios.Base.Indicator;Advisory Indicators_CANOPY" Name="Advisory Indicators_CANOPY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory EFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_EFC;Helios.Base.Indicator;Advisory Indicators_EFC" Name="Advisory Indicators_EFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory EFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_EFC;Helios.Base.Indicator;Advisory Indicators_EFC" Name="Advisory Indicators_EFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory EFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_EFC;Helios.Base.Indicator;Advisory Indicators_EFC" Name="Advisory Indicators_EFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory EFC.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_EFC;Helios.Base.Indicator;Advisory Indicators_EFC" Name="Advisory Indicators_EFC.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory H2O SEL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_H2O SEL;Helios.Base.Indicator;Advisory Indicators_H2O SEL" Name="Advisory Indicators_H2O SEL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory H2O SEL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_H2O SEL;Helios.Base.Indicator;Advisory Indicators_H2O SEL" Name="Advisory Indicators_H2O SEL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory H2O SEL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_H2O SEL;Helios.Base.Indicator;Advisory Indicators_H2O SEL" Name="Advisory Indicators_H2O SEL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory H2O SEL.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_H2O SEL;Helios.Base.Indicator;Advisory Indicators_H2O SEL" Name="Advisory Indicators_H2O SEL.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SPD BRK.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SPD BRK;Helios.Base.Indicator;Advisory Indicators_SPD BRK" Name="Advisory Indicators_SPD BRK.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SPD BRK.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SPD BRK;Helios.Base.Indicator;Advisory Indicators_SPD BRK" Name="Advisory Indicators_SPD BRK.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SPD BRK.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SPD BRK;Helios.Base.Indicator;Advisory Indicators_SPD BRK" Name="Advisory Indicators_SPD BRK.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory SPD BRK.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_SPD BRK;Helios.Base.Indicator;Advisory Indicators_SPD BRK" Name="Advisory Indicators_SPD BRK.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AV BIT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AV BIT;Helios.Base.Indicator;Advisory Indicators_AV BIT" Name="Advisory Indicators_AV BIT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AV BIT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AV BIT;Helios.Base.Indicator;Advisory Indicators_AV BIT" Name="Advisory Indicators_AV BIT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AV BIT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AV BIT;Helios.Base.Indicator;Advisory Indicators_AV BIT" Name="Advisory Indicators_AV BIT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory AV BIT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_AV BIT;Helios.Base.Indicator;Advisory Indicators_AV BIT" Name="Advisory Indicators_AV BIT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P JAM;Helios.Base.Indicator;Advisory Indicators_P JAM" Name="Advisory Indicators_P JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P JAM;Helios.Base.Indicator;Advisory Indicators_P JAM" Name="Advisory Indicators_P JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P JAM;Helios.Base.Indicator;Advisory Indicators_P JAM" Name="Advisory Indicators_P JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory P JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_P JAM;Helios.Base.Indicator;Advisory Indicators_P JAM" Name="Advisory Indicators_P JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW JAM;Helios.Base.Indicator;Advisory Indicators_CW JAM" Name="Advisory Indicators_CW JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW JAM;Helios.Base.Indicator;Advisory Indicators_CW JAM" Name="Advisory Indicators_CW JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW JAM;Helios.Base.Indicator;Advisory Indicators_CW JAM" Name="Advisory Indicators_CW JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory CW JAM.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_CW JAM;Helios.Base.Indicator;Advisory Indicators_CW JAM" Name="Advisory Indicators_CW JAM.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory NWS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_NWS;Helios.Base.Indicator;Advisory Indicators_NWS" Name="Advisory Indicators_NWS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory NWS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_NWS;Helios.Base.Indicator;Advisory Indicators_NWS" Name="Advisory Indicators_NWS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory NWS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_NWS;Helios.Base.Indicator;Advisory Indicators_NWS" Name="Advisory Indicators_NWS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory NWS.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_NWS;Helios.Base.Indicator;Advisory Indicators_NWS" Name="Advisory Indicators_NWS.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU;Helios.Base.Indicator;Advisory Indicators_APU" Name="Advisory Indicators_APU.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU;Helios.Base.Indicator;Advisory Indicators_APU" Name="Advisory Indicators_APU.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU;Helios.Base.Indicator;Advisory Indicators_APU" Name="Advisory Indicators_APU.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory APU.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_APU;Helios.Base.Indicator;Advisory Indicators_APU" Name="Advisory Indicators_APU.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DROOP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DROOP;Helios.Base.Indicator;Advisory Indicators_DROOP" Name="Advisory Indicators_DROOP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DROOP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DROOP;Helios.Base.Indicator;Advisory Indicators_DROOP" Name="Advisory Indicators_DROOP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DROOP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DROOP;Helios.Base.Indicator;Advisory Indicators_DROOP" Name="Advisory Indicators_DROOP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory DROOP.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_DROOP;Helios.Base.Indicator;Advisory Indicators_DROOP" Name="Advisory Indicators_DROOP.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 2;Helios.Base.Indicator;Advisory Indicators_Blank 2" Name="Advisory Indicators_Blank 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 2;Helios.Base.Indicator;Advisory Indicators_Blank 2" Name="Advisory Indicators_Blank 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 2;Helios.Base.Indicator;Advisory Indicators_Blank 2" Name="Advisory Indicators_Blank 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory Blank 2.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_Blank 2;Helios.Base.Indicator;Advisory Indicators_Blank 2" Name="Advisory Indicators_Blank 2.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory JMR HOT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_JMR HOT;Helios.Base.Indicator;Advisory Indicators_JMR HOT" Name="Advisory Indicators_JMR HOT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory JMR HOT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_JMR HOT;Helios.Base.Indicator;Advisory Indicators_JMR HOT" Name="Advisory Indicators_JMR HOT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory JMR HOT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_JMR HOT;Helios.Base.Indicator;Advisory Indicators_JMR HOT" Name="Advisory Indicators_JMR HOT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory JMR HOT.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_JMR HOT;Helios.Base.Indicator;Advisory Indicators_JMR HOT" Name="Advisory Indicators_JMR HOT.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory REPLY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_REPLY;Helios.Base.Indicator;Advisory Indicators_REPLY" Name="Advisory Indicators_REPLY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory REPLY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_REPLY;Helios.Base.Indicator;Advisory Indicators_REPLY" Name="Advisory Indicators_REPLY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory REPLY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_REPLY;Helios.Base.Indicator;Advisory Indicators_REPLY" Name="Advisory Indicators_REPLY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Advisory Indicators.Advisory REPLY.changed" />
+      <Action Target="Visual;Monitor 1.background.Advisory Indicator Panel Small.Advisory Indicators.Advisory Indicators_REPLY;Helios.Base.Indicator;Advisory Indicators_REPLY" Name="Advisory Indicators_REPLY.set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Channel Number.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Channel Number;Helios.Base.TextDisplay;Radio/ACNIP_Channel Number" Name="Radio/ACNIP_Channel Number.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Frequency.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Frequency Display;Helios.Base.TextDisplay;Radio/ACNIP_Frequency Display" Name="Radio/ACNIP_Frequency Display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Volume Knob.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Radio volume;Helios.Base.Potentiometer;Radio/ACNIP_Radio volume" Name="Radio/ACNIP_Radio volume.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Ancillary Mode Pointer A mode.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_A Mode Button;Helios.Base.PushButton;Radio/ACNIP_A Mode Button" Name="Radio/ACNIP_A Mode Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Ancillary Mode Switch P mode.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_P Mode Button;Helios.Base.PushButton;Radio/ACNIP_P Mode Button" Name="Radio/ACNIP_P Mode Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.LOAD/OFST Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Load Switch;Helios.Base.PushButton;Radio/ACNIP_Load Switch" Name="Radio/ACNIP_Load Switch.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Operational Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Operational Mode;Helios.Base.RotarySwitch;Radio/ACNIP_Operational Mode" Name="Radio/ACNIP_Operational Mode.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Frequency Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Frequency Mode;Helios.Base.RotarySwitch;Radio/ACNIP_Frequency Mode" Name="Radio/ACNIP_Frequency Mode.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 1 Mode Label.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_1 Mode Label;Helios.Base.TextDisplay;Radio/ACNIP_1 Mode Label" Name="Radio/ACNIP_1 Mode Label.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 1 Mode.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_1 Mode display;Helios.Base.TextDisplay;Radio/ACNIP_1 Mode display" Name="Radio/ACNIP_1 Mode display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 1 Code Label.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_1 Code Label;Helios.Base.TextDisplay;Radio/ACNIP_1 Code Label" Name="Radio/ACNIP_1 Code Label.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 1 Code.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_1 Code display;Helios.Base.TextDisplay;Radio/ACNIP_1 Code display" Name="Radio/ACNIP_1 Code display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 2 Mode Label.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_2 Mode Label;Helios.Base.TextDisplay;Radio/ACNIP_2 Mode Label" Name="Radio/ACNIP_2 Mode Label.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 2 Mode.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_2 Mode display;Helios.Base.TextDisplay;Radio/ACNIP_2 Mode display" Name="Radio/ACNIP_2 Mode display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 2 Code Label.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_2 Code Label;Helios.Base.TextDisplay;Radio/ACNIP_2 Code Label" Name="Radio/ACNIP_2 Code Label.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 2 Code.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_2 Code display;Helios.Base.TextDisplay;Radio/ACNIP_2 Code display" Name="Radio/ACNIP_2 Code display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_Mode Switch" Name="Radio/ACNIP_Mode Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-1 Cipher Type Selector Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-1 Cipher Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-1 Cipher Switch" Name="Radio/ACNIP_KY-1 Cipher Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-2 Cipher Type Selector Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-2 Cipher Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-2 Cipher Switch" Name="Radio/ACNIP_KY-2 Cipher Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-1 Code/Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-1 Code/Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-1 Code/Mode Switch" Name="Radio/ACNIP_KY-1 Code/Mode Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-2 Code/Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-2 Code/Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-2 Code/Mode Switch" Name="Radio/ACNIP_KY-2 Code/Mode Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP Radio Selector Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_ACNIP Radio Selector Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_ACNIP Radio Selector Switch" Name="Radio/ACNIP_ACNIP Radio Selector Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-58 Codes Clear Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-58 Codes Clear Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-58 Codes Clear Switch" Name="Radio/ACNIP_KY-58 Codes Clear Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-58 Remote Codes Load Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-58 Load Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_KY-58 Load Switch" Name="Radio/ACNIP_KY-58 Load Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.IFF Operational Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_IFF Operational Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_IFF Operational Mode Switch" Name="Radio/ACNIP_IFF Operational Mode Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.IFF Crypto Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_IFF Crypto Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_IFF Crypto Switch" Name="Radio/ACNIP_IFF Crypto Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.Mic Operational Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Mic Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_Mic Switch" Name="Radio/ACNIP_Mic Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.Ground Volume Knob.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Ground Volume;Helios.Base.Potentiometer;Radio/ACNIP_Ground Volume" Name="Radio/ACNIP_Ground Volume.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.Aux Volume Knob.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Aux Volume;Helios.Base.Potentiometer;Radio/ACNIP_Aux Volume" Name="Radio/ACNIP_Aux Volume.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Channel Number.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Channel Number;Helios.Base.TextDisplay;Radio/ACNIP_Channel Number" Name="Radio/ACNIP_Channel Number.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Frequency.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Frequency Display;Helios.Base.TextDisplay;Radio/ACNIP_Frequency Display" Name="Radio/ACNIP_Frequency Display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Ancillary Mode Pointer A mode.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_A Mode Button;Helios.Base.PushButton;Radio/ACNIP_A Mode Button" Name="Radio/ACNIP_A Mode Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Ancillary Mode Switch P mode.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_P Mode Button;Helios.Base.PushButton;Radio/ACNIP_P Mode Button" Name="Radio/ACNIP_P Mode Button.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.LOAD/OFST Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Load Switch;Helios.Base.PushButton;Radio/ACNIP_Load Switch" Name="Radio/ACNIP_Load Switch.set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Operational Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Operational Mode;Helios.Base.RotarySwitch;Radio/ACNIP_Operational Mode" Name="Radio/ACNIP_Operational Mode.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.Frequency Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Frequency Mode;Helios.Base.RotarySwitch;Radio/ACNIP_Frequency Mode" Name="Radio/ACNIP_Frequency Mode.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 1 Mode Label.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_1 Mode Label;Helios.Base.TextDisplay;Radio/ACNIP_1 Mode Label" Name="Radio/ACNIP_1 Mode Label.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 1 Mode.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_1 Mode display;Helios.Base.TextDisplay;Radio/ACNIP_1 Mode display" Name="Radio/ACNIP_1 Mode display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 1 Code Label.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_1 Code Label;Helios.Base.TextDisplay;Radio/ACNIP_1 Code Label" Name="Radio/ACNIP_1 Code Label.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 1 Code.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_1 Code display;Helios.Base.TextDisplay;Radio/ACNIP_1 Code display" Name="Radio/ACNIP_1 Code display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 2 Mode Label.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_2 Mode Label;Helios.Base.TextDisplay;Radio/ACNIP_2 Mode Label" Name="Radio/ACNIP_2 Mode Label.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 2 Mode.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_2 Mode display;Helios.Base.TextDisplay;Radio/ACNIP_2 Mode display" Name="Radio/ACNIP_2 Mode display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 2 Code Label.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_2 Code Label;Helios.Base.TextDisplay;Radio/ACNIP_2 Code Label" Name="Radio/ACNIP_2 Code Label.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP 2 Code.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_2 Code display;Helios.Base.TextDisplay;Radio/ACNIP_2 Code display" Name="Radio/ACNIP_2 Code display.set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_Mode Switch" Name="Radio/ACNIP_Mode Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-1 Cipher Type Selector Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-1 Cipher Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-1 Cipher Switch" Name="Radio/ACNIP_KY-1 Cipher Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-2 Cipher Type Selector Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-2 Cipher Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-2 Cipher Switch" Name="Radio/ACNIP_KY-2 Cipher Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-1 Code/Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-1 Code/Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-1 Code/Mode Switch" Name="Radio/ACNIP_KY-1 Code/Mode Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-2 Code/Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-2 Code/Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-2 Code/Mode Switch" Name="Radio/ACNIP_KY-2 Code/Mode Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.ACNIP Radio Selector Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_ACNIP Radio Selector Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_ACNIP Radio Selector Switch" Name="Radio/ACNIP_ACNIP Radio Selector Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-58 Codes Clear Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-58 Codes Clear Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-58 Codes Clear Switch" Name="Radio/ACNIP_KY-58 Codes Clear Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.KY-58 Remote Codes Load Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-58 Load Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_KY-58 Load Switch" Name="Radio/ACNIP_KY-58 Load Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.IFF Operational Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_IFF Operational Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_IFF Operational Mode Switch" Name="Radio/ACNIP_IFF Operational Mode Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.IFF Crypto Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_IFF Crypto Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_IFF Crypto Switch" Name="Radio/ACNIP_IFF Crypto Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.Mic Operational Mode Switch.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Mic Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_Mic Switch" Name="Radio/ACNIP_Mic Switch.set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.Ground Volume Knob.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Ground Volume;Helios.Base.Potentiometer;Radio/ACNIP_Ground Volume" Name="Radio/ACNIP_Ground Volume.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.Aux Volume Knob.changed" />
+      <Action Target="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Aux Volume;Helios.Base.Potentiometer;Radio/ACNIP_Aux Volume" Name="Radio/ACNIP_Aux Volume.set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.background.Front Cockpit.Master Arm Device.Master Arm Panel_Nav Button;Helios.Base.PushButton;Master Arm Panel_Nav Button" Name="Master Arm Panel_Nav Button.pushed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Master Modes.push.NAV Button" />
       <StaticValue />
@@ -4847,6 +6437,256 @@
       <Action Target="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="set.hidden" />
       <StaticValue>False</StaticValue>
     </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.Advisory Indicator Panel Small.Max Button;Helios.Base.BacklitPushButton;Max Button" Name="released" />
+      <Action Target="Visual;Monitor 1.Advisory Indicator Panel;Helios.Panel;Advisory Indicator Panel" Name="toggle.hidden" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Radio volume;Helios.Base.Potentiometer;Radio/ACNIP_Radio volume" Name="Radio/ACNIP_Radio volume.value.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.set.Volume Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Radio volume;Helios.Base.Potentiometer;Radio/ACNIP_Radio volume" Name="Radio/ACNIP_Radio volume.value.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.set.Volume Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Channel Knob;Helios.Base.RotaryEncoder;Radio/ACNIP_Channel Knob" Name="Radio/ACNIP_Channel Knob.encoder.incremented" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.set.jet" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Channel Knob;Helios.Base.RotaryEncoder;Radio/ACNIP_Channel Knob" Name="Radio/ACNIP_Channel Knob.encoder.decremented" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.set.jet" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_A Mode Button;Helios.Base.PushButton;Radio/ACNIP_A Mode Button" Name="Radio/ACNIP_A Mode Button.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.push.Ancillary Mode Pointer A mode" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_A Mode Button;Helios.Base.PushButton;Radio/ACNIP_A Mode Button" Name="Radio/ACNIP_A Mode Button.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.release.Ancillary Mode Pointer A mode" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_A Mode Button;Helios.Base.PushButton;Radio/ACNIP_A Mode Button" Name="Radio/ACNIP_A Mode Button.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.push.Ancillary Mode Pointer A mode" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_A Mode Button;Helios.Base.PushButton;Radio/ACNIP_A Mode Button" Name="Radio/ACNIP_A Mode Button.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.release.Ancillary Mode Pointer A mode" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_P Mode Button;Helios.Base.PushButton;Radio/ACNIP_P Mode Button" Name="Radio/ACNIP_P Mode Button.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.push.Ancillary Mode Switch P mode" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_P Mode Button;Helios.Base.PushButton;Radio/ACNIP_P Mode Button" Name="Radio/ACNIP_P Mode Button.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.release.Ancillary Mode Switch P mode" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_P Mode Button;Helios.Base.PushButton;Radio/ACNIP_P Mode Button" Name="Radio/ACNIP_P Mode Button.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.push.Ancillary Mode Switch P mode" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_P Mode Button;Helios.Base.PushButton;Radio/ACNIP_P Mode Button" Name="Radio/ACNIP_P Mode Button.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.release.Ancillary Mode Switch P mode" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Load Switch;Helios.Base.PushButton;Radio/ACNIP_Load Switch" Name="Radio/ACNIP_Load Switch.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.push.LOAD/OFST Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Load Switch;Helios.Base.PushButton;Radio/ACNIP_Load Switch" Name="Radio/ACNIP_Load Switch.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.release.LOAD/OFST Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Load Switch;Helios.Base.PushButton;Radio/ACNIP_Load Switch" Name="Radio/ACNIP_Load Switch.pushed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.push.LOAD/OFST Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Load Switch;Helios.Base.PushButton;Radio/ACNIP_Load Switch" Name="Radio/ACNIP_Load Switch.released" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.release.LOAD/OFST Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Operational Mode;Helios.Base.RotarySwitch;Radio/ACNIP_Operational Mode" Name="Radio/ACNIP_Operational Mode.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.set.Operational Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Operational Mode;Helios.Base.RotarySwitch;Radio/ACNIP_Operational Mode" Name="Radio/ACNIP_Operational Mode.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.set.Operational Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Frequency Mode;Helios.Base.RotarySwitch;Radio/ACNIP_Frequency Mode" Name="Radio/ACNIP_Frequency Mode.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.set.Frequency Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Frequency Mode;Helios.Base.RotarySwitch;Radio/ACNIP_Frequency Mode" Name="Radio/ACNIP_Frequency Mode.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="V/UHF Radio.set.Frequency Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_Mode Switch" Name="Radio/ACNIP_Mode Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.ACNIP Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_Mode Switch" Name="Radio/ACNIP_Mode Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.ACNIP Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-1 Cipher Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-1 Cipher Switch" Name="Radio/ACNIP_KY-1 Cipher Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-1 Cipher Type Selector Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-1 Cipher Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-1 Cipher Switch" Name="Radio/ACNIP_KY-1 Cipher Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-1 Cipher Type Selector Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-2 Cipher Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-2 Cipher Switch" Name="Radio/ACNIP_KY-2 Cipher Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-2 Cipher Type Selector Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-2 Cipher Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-2 Cipher Switch" Name="Radio/ACNIP_KY-2 Cipher Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-2 Cipher Type Selector Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-1 Code/Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-1 Code/Mode Switch" Name="Radio/ACNIP_KY-1 Code/Mode Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-1 Code/Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-1 Code/Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-1 Code/Mode Switch" Name="Radio/ACNIP_KY-1 Code/Mode Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-1 Code/Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-2 Code/Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-2 Code/Mode Switch" Name="Radio/ACNIP_KY-2 Code/Mode Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-2 Code/Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-2 Code/Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-2 Code/Mode Switch" Name="Radio/ACNIP_KY-2 Code/Mode Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-2 Code/Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_ACNIP Radio Selector Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_ACNIP Radio Selector Switch" Name="Radio/ACNIP_ACNIP Radio Selector Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.ACNIP Radio Selector Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_ACNIP Radio Selector Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_ACNIP Radio Selector Switch" Name="Radio/ACNIP_ACNIP Radio Selector Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.ACNIP Radio Selector Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-58 Codes Clear Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-58 Codes Clear Switch" Name="Radio/ACNIP_KY-58 Codes Clear Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-58 Codes Clear Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-58 Codes Clear Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_KY-58 Codes Clear Switch" Name="Radio/ACNIP_KY-58 Codes Clear Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-58 Codes Clear Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-58 Load Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_KY-58 Load Switch" Name="Radio/ACNIP_KY-58 Load Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-58 Remote Codes Load Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_KY-58 Load Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_KY-58 Load Switch" Name="Radio/ACNIP_KY-58 Load Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.KY-58 Remote Codes Load Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_IFF Operational Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_IFF Operational Mode Switch" Name="Radio/ACNIP_IFF Operational Mode Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.IFF Operational Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_IFF Operational Mode Switch;Helios.Base.ToggleSwitch;Radio/ACNIP_IFF Operational Mode Switch" Name="Radio/ACNIP_IFF Operational Mode Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.IFF Operational Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_IFF Crypto Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_IFF Crypto Switch" Name="Radio/ACNIP_IFF Crypto Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.IFF Crypto Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_IFF Crypto Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_IFF Crypto Switch" Name="Radio/ACNIP_IFF Crypto Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="ACNIP.set.IFF Crypto Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Mic Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_Mic Switch" Name="Radio/ACNIP_Mic Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.set.Mic Operational Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Mic Switch;Helios.Base.ThreeWayToggleSwitch;Radio/ACNIP_Mic Switch" Name="Radio/ACNIP_Mic Switch.position.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.set.Mic Operational Mode Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Ground Volume;Helios.Base.Potentiometer;Radio/ACNIP_Ground Volume" Name="Radio/ACNIP_Ground Volume.value.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.set.Ground Volume Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Ground Volume;Helios.Base.Potentiometer;Radio/ACNIP_Ground Volume" Name="Radio/ACNIP_Ground Volume.value.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.set.Ground Volume Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Aux Volume;Helios.Base.Potentiometer;Radio/ACNIP_Aux Volume" Name="Radio/ACNIP_Aux Volume.value.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.set.Aux Volume Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Radio/ACNIP.Radio/ACNIP_Aux Volume;Helios.Base.Potentiometer;Radio/ACNIP_Aux Volume" Name="Radio/ACNIP_Aux Volume.value.changed" />
+      <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Intercomm.set.Aux Volume Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 1.background.ACNIP Panel Small.Push Button;Helios.Base.BacklitPushButton;Push Button" Name="released" />
+      <Action Target="Visual;Monitor 1.ACNIP Panel;Helios.Panel;ACNIP Panel" Name="toggle.hidden" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 1.background.Toggle Right MPCD;Helios.Base.PushButton;Toggle Right MPCD" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>"{LCONTROL}{LALT}a" "{LCONTROL}{LALT}s" </StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 1.background.Toggle Left MPCD;Helios.Base.PushButton;Toggle Left MPCD" Name="pushed" />
+      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
+      <StaticValue>"{LCONTROL}{LALT}a" "{LCONTROL}{LALT}s" </StaticValue>
+    </Binding>
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 1.Canopy Panel Right.Canopy Right Switch;Helios.Base.ToggleSwitch;Canopy Right Switch" Name="position.changed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Canopy Controls.set.Canopy Handle Right" />
@@ -4918,7 +6758,7 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 1.Misc Panel.Hide Panel;Helios.Base.PushButton;Hide Panel" Name="pushed" />
+      <Trigger Source="Visual;Monitor 1.Misc Panel.Hide Panel;Helios.Base.BacklitPushButton;Hide Panel" Name="pushed" />
       <Action Target="Visual;Monitor 1.Misc Panel;Helios.Panel;Misc Panel" Name="set.hidden" />
       <StaticValue>True</StaticValue>
     </Binding>
@@ -4975,11 +6815,6 @@
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 1.Internal Lights Panel.Cabin Pressure Switch;Helios.Base.ThreeWayToggleSwitch;Cabin Pressure Switch" Name="position.changed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Environment Control.set.Cabin Pressure Switch" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 1.ACNIP Panel.Hide Panel;Helios.Base.PushButton;Hide Panel" Name="pushed" />
-      <Action Target="Visual;Monitor 1.ACNIP Panel;Helios.Panel;ACNIP Panel" Name="set.hidden" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -5103,9 +6938,9 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 1.Advisory Indicator Panel.Whole Advisory Panel Push Button;Helios.Base.PushButton;Whole Advisory Panel Push Button" Name="pushed" />
-      <Action Target="Visual;Monitor 1.Advisory Indicator Panel;Helios.Panel;Advisory Indicator Panel" Name="set.hidden" />
-      <StaticValue>True</StaticValue>
+      <Trigger Source="Visual;Monitor 1.ACNIP Panel.Hide Panel;Helios.Base.BacklitPushButton;Hide Panel" Name="pushed" />
+      <Action Target="Visual;Monitor 1.ACNIP Panel;Helios.Panel;ACNIP Panel" Name="set.hidden" />
+      <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 1.Advisory Indicator Panel.Generator Switch;Helios.Base.ThreeWayToggleSwitch;Generator Switch" Name="position.changed" />
@@ -5131,6 +6966,11 @@
       <Trigger Source="Visual;Monitor 1.Advisory Indicator Panel.DC Test Switch;Helios.Base.ThreeWayToggleSwitch;DC Test Switch" Name="position.changed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Electrical.set.DC Test switch" />
       <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 1.Advisory Indicator Panel.Advisory Panel Hide Button;Helios.Base.BacklitPushButton;Advisory Panel Hide Button" Name="pushed" />
+      <Action Target="Visual;Monitor 1.Advisory Indicator Panel;Helios.Panel;Advisory Indicator Panel" Name="set.hidden" />
+      <StaticValue>True</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 1.Fuel and External Lights Panel.Fuel and Ext Lights Hide Button;Helios.Base.PushButton;Fuel and Ext Lights Hide Button" Name="pushed" />
@@ -5203,7 +7043,7 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 1.Throttle Panel.Hide Panel;Helios.Base.PushButton;Hide Panel" Name="pushed" />
+      <Trigger Source="Visual;Monitor 1.Throttle Panel.Hide Panel;Helios.Base.BacklitPushButton;Hide Panel" Name="pushed" />
       <Action Target="Visual;Monitor 1.Throttle Panel;Helios.Panel;Throttle Panel" Name="set.hidden" />
       <TriggerValue />
     </Binding>
@@ -5262,11 +7102,6 @@
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="SAAHS.set.SAS Pitch Switch" />
       <TriggerValue />
     </Binding>
-    <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 1.Flaps and Gear Panel.Hide Button;Helios.Base.PushButton;Hide Button" Name="pushed" />
-      <Action Target="Visual;Monitor 1.Flaps and Gear Panel;Helios.Panel;Flaps and Gear Panel" Name="toggle.hidden" />
-      <StaticValue />
-    </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 1.Flaps and Gear Panel.Flaps and Gear Panel.Flaps and Gear Panel_Emergency Jettison Button;Helios.Base.PushButton;Flaps and Gear Panel_Emergency Jettison Button" Name="Flaps and Gear Panel_Emergency Jettison Button.pushed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Landing Gear.push.Emergency Jettison Button" />
@@ -5318,8 +7153,8 @@
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 1.Fuel Cutoff Panel.Hide Button;Helios.Base.PushButton;Hide Button" Name="pushed" />
-      <Action Target="Visual;Monitor 1.Fuel Cutoff Panel;Helios.Panel;Fuel Cutoff Panel" Name="toggle.hidden" />
+      <Trigger Source="Visual;Monitor 1.Flaps and Gear Panel.Hide Button;Helios.Base.PushButton;Hide Button" Name="pushed" />
+      <Action Target="Visual;Monitor 1.Flaps and Gear Panel;Helios.Panel;Flaps and Gear Panel" Name="toggle.hidden" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
@@ -5331,6 +7166,11 @@
       <Trigger Source="Visual;Monitor 1.Fuel Cutoff Panel.DECS Switch;Helios.Base.ToggleSwitch;DECS Switch" Name="position.changed" />
       <Action Target="Interface;;Helios.AV8B;DCS AV-8B" Name="Left Bulkhead.set.DECS switch" />
       <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 1.Fuel Cutoff Panel.Hide Button;Helios.Base.PushButton;Hide Button" Name="pushed" />
+      <Action Target="Visual;Monitor 1.Fuel Cutoff Panel;Helios.Panel;Fuel Cutoff Panel" Name="toggle.hidden" />
+      <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 1.Parking Brake Panel.Toggle Switch;Helios.Base.ToggleSwitch;Toggle Switch" Name="position two.entered" />
@@ -5531,16 +7371,6 @@
       <Trigger Source="Visual;Monitor 1.Panel Game Options.PB_Clocks;Helios.Base.PushButton;PB_Clocks" Name="released" />
       <Action Target="Visual;Monitor 1.background.Chronology Panel;Helios.Panel;Chronology Panel" Name="set.hidden" />
       <StaticValue>False</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 1.Toggle Right MPCD;Helios.Base.PushButton;Toggle Right MPCD" Name="pushed" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <StaticValue>"{LCONTROL}{LALT}a" "{LCONTROL}{LALT}s" </StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 1.Toggle Left MPCD;Helios.Base.PushButton;Toggle Left MPCD" Name="pushed" />
-      <Action Target="Interface;;Helios.Base.Keyboard;Keyboard" Name="send keys" />
-      <StaticValue>"{LCONTROL}{LALT}a" "{LCONTROL}{LALT}s" </StaticValue>
     </Binding>
   </Bindings>
 </HeliosProfile>
