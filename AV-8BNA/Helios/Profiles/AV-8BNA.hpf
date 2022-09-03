@@ -73,7 +73,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Canopy Panel Right" SnapTarget="True" Locked="False">
-          <Location>2115,12</Location>
+          <Location>1732,12</Location>
           <Size>180,380</Size>
           <Hidden>True</Hidden>
           <Background />
@@ -98,7 +98,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Canopy Panel Left" SnapTarget="True" Locked="False">
-          <Location>384,4</Location>
+          <Location>1,4</Location>
           <Size>180,380</Size>
           <Hidden>True</Hidden>
           <Background />
@@ -123,7 +123,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Refueling Cockpit Panel" SnapTarget="True" Locked="False">
-          <Location>384,0</Location>
+          <Location>1,0</Location>
           <Size>192,47</Size>
           <Hidden>False</Hidden>
           <Background>
@@ -232,7 +232,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Canopy Lock Panel" SnapTarget="True" Locked="False">
-          <Location>2203,790</Location>
+          <Location>1820,790</Location>
           <Size>100,290</Size>
           <Hidden>True</Hidden>
           <Background />
@@ -257,7 +257,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Ground Safety Panel" SnapTarget="True" Locked="False">
-          <Location>2152,680</Location>
+          <Location>1769,680</Location>
           <Size>46,400</Size>
           <Hidden>True</Hidden>
           <Background />
@@ -282,7 +282,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Flaps Panel" SnapTarget="True" Locked="False">
-          <Location>384,971</Location>
+          <Location>1,971</Location>
           <Size>119,97</Size>
           <Hidden>False</Hidden>
           <Background>
@@ -317,7 +317,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Misc Panel" SnapTarget="True" Locked="False">
-          <Location>1789,680</Location>
+          <Location>1406,680</Location>
           <Size>340,384</Size>
           <Hidden>True</Hidden>
           <Background />
@@ -461,7 +461,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Internal Lights Panel" SnapTarget="True" Locked="False">
-          <Location>1393,578</Location>
+          <Location>1010,578</Location>
           <Size>400,502</Size>
           <Hidden>True</Hidden>
           <Background>
@@ -631,7 +631,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="ACNIP Panel" SnapTarget="True" Locked="False">
-          <Location>1393,0</Location>
+          <Location>1010,0</Location>
           <Size>442,550</Size>
           <Hidden>True</Hidden>
           <Background />
@@ -659,7 +659,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Advisory Indicator Panel" SnapTarget="True" Locked="False">
-          <Location>1848,152</Location>
+          <Location>1465,152</Location>
           <Size>455,528</Size>
           <Hidden>True</Hidden>
           <Background>
@@ -791,7 +791,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Fuel and External Lights Panel" SnapTarget="True" Locked="False">
-          <Location>604,488</Location>
+          <Location>221,488</Location>
           <Size>400,592</Size>
           <Hidden>True</Hidden>
           <Background>
@@ -969,7 +969,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Throttle Panel" SnapTarget="True" Locked="False">
-          <Location>384,423</Location>
+          <Location>1,423</Location>
           <Size>333,657</Size>
           <Hidden>True</Hidden>
           <Background />
@@ -1053,7 +1053,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Seat Adj and Lights" SnapTarget="True" Locked="False">
-          <Location>994,628</Location>
+          <Location>611,628</Location>
           <Size>74,452</Size>
           <Hidden>True</Hidden>
           <Background>
@@ -1104,7 +1104,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="SAAHS Panel" SnapTarget="True" Locked="False">
-          <Location>995,1</Location>
+          <Location>612,1</Location>
           <Size>400,423</Size>
           <Hidden>True</Hidden>
           <Background>
@@ -1240,7 +1240,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Flaps and Gear Panel" SnapTarget="True" Locked="False">
-          <Location>598,68</Location>
+          <Location>215,68</Location>
           <Size>374,417</Size>
           <Hidden>True</Hidden>
           <Background />
@@ -1268,7 +1268,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Fuel Cutoff Panel" SnapTarget="True" Locked="False">
-          <Location>385,517</Location>
+          <Location>2,517</Location>
           <Size>220,563</Size>
           <Hidden>True</Hidden>
           <Background>
@@ -1317,7 +1317,7 @@
           </Children>
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Parking Brake Panel" SnapTarget="True" Locked="False">
-          <Location>1017,529</Location>
+          <Location>634,529</Location>
           <Size>73,208</Size>
           <Hidden>True</Hidden>
           <Background>
@@ -1543,7 +1543,7 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Toggle Right MPCD" SnapTarget="True" Locked="False">
-          <Location>1759,385</Location>
+          <Location>1376,385</Location>
           <Size>236,236</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
@@ -1570,7 +1570,7 @@
             </Padding>
           </Font>
           <Text>AV8BNA_LEFT_MFCD</Text>
-          <Location>266,350</Location>
+          <Location>266,349</Location>
           <Size>334,306</Size>
           <Hidden>False</Hidden>
           <ViewportName>AV8BNA_LEFT_MFCD</ViewportName>
@@ -1578,7 +1578,7 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Toggle Left MPCD" SnapTarget="True" Locked="False">
-          <Location>695,385</Location>
+          <Location>312,385</Location>
           <Size>236,236</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>

@@ -60,8 +60,7 @@ jobs:
           echo 'Small Tag= '$smallTag
           sed -i -- 's#_ProfileVersionNumber#'"V ${{ steps.bump_tag.outputs.tag }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
           sed -i -- 's#_CurrentDate#'"${{ steps.date.outputs.date }}"'#g' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf'
-
-          mv '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' '${{ env.VEHICLE }}/Helios/Profiles/BlueFinBima_${{ env.PROFILENAME }}_'$smallTag'.hpf'
+          mv '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}.hpf' '${{ env.VEHICLE }}/Helios/Profiles/${{ env.PROFILENAME }}_'$smallTag'_BlueFinBima.hpf'
           echo Substituting info in the Profile16.json manifest
           sed -i -- 's/_MinimumReleaseLevel/${{ env.MINHELIOSRELEASE }}/g' Profile16.json
           sed -i -- 's/_ReleaseDate/'"$(date "+%d %B %Y")"'/g' Profile16.json
