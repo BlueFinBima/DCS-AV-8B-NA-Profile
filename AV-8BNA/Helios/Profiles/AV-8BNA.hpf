@@ -1749,8 +1749,8 @@
             </Padding>
           </Font>
           <Text>AV8BNA_RIGHT_MFCD</Text>
-          <Location>1321,350</Location>
-          <Size>334,306</Size>
+          <Location>1322,355</Location>
+          <Size>335,335</Size>
           <Hidden>False</Hidden>
           <ViewportName>AV8BNA_RIGHT_MFCD</ViewportName>
           <RequiresPatches>True</RequiresPatches>
@@ -1775,8 +1775,8 @@
             </Padding>
           </Font>
           <Text>AV8BNA_LEFT_MFCD</Text>
-          <Location>266,349</Location>
-          <Size>334,306</Size>
+          <Location>267,356</Location>
+          <Size>335,335</Size>
           <Hidden>False</Hidden>
           <ViewportName>AV8BNA_LEFT_MFCD</ViewportName>
           <RequiresPatches>True</RequiresPatches>
