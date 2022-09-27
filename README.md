@@ -16,6 +16,16 @@ lctl+lalt+s  (Right MFD)
 ```
 The current profile will toggle the MFD's when the profile is reset in Helios Control Center.
 
+There are two sets of options you should be aware of which affect the rendering of viewports.  The first is the 
+control for exporting the MPCDs.  It is possible that if the keystrokes described above do not work, the controls
+have been bound to another set of keys so these options are worth checking.
+
+![Controls](https://user-images.githubusercontent.com/18526232/192464400-b33310c6-7d3a-42e2-ad28-0bf5ed2c7ed1.png)
+
+There are also general options for the AV-8B which might also be worth checking.
+
+![Option](https://user-images.githubusercontent.com/18526232/192464433-cda3d096-713f-4abb-af47-34704e88c6b2.png)
+
 To turn off cockpit MFDs but still have them exported to other monitors:-
 
 Look in the file C:\Program Files\Eagle Dynamics\DCS World\Scripts\Aircrafts\_Common\Cockpit\ViewportHandling.lua for the Line (should be around line 81):-
@@ -26,6 +36,7 @@ And comment it out thus:-
 ```
 purposes = {--render_purpose.GENERAL,
 ```
+
 The latest version of the profile used Helios 1.6 features including ViewPort management and for people running this profile locally, the information relating to Viewports is no longer relevant as it is handled by Helios.
 
 ## Quality of Image on Exported Viewports
